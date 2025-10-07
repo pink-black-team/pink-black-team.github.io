@@ -385,6 +385,94 @@
   }
 }
 
+/* Enhanced sections for special projects */
+.enhancedSection {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  padding: 60px 20px;
+}
+
+.businessModelGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.businessCard {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 20, 147, 0.3);
+  border-radius: 16px;
+  transition: all 0.4s ease;
+}
+
+.businessCard:hover {
+  border-color: rgba(255, 20, 147, 0.6);
+  box-shadow: 0 0 30px rgba(255, 20, 147, 0.2);
+  transform: translateY(-8px);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-pink);
+  margin: 0 0 20px;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.featureList li {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  padding-left: 8px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.statCard {
+  padding: 40px 30px;
+  background: linear-gradient(135deg, rgba(255, 20, 147, 0.1), rgba(0, 0, 0, 0.6));
+  border: 2px solid rgba(255, 20, 147, 0.3);
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.statCard:hover {
+  border-color: rgba(255, 20, 147, 0.6);
+  box-shadow: 0 0 40px rgba(255, 20, 147, 0.3);
+  transform: scale(1.05);
+}
+
+.statNumber {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--color-pink);
+  margin: 0 0 12px;
+  text-shadow: 0 0 30px rgba(255, 20, 147, 0.8);
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+
 /* Accessibility: Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .investmentBlock:hover {
@@ -393,5 +481,55 @@
 
   .linkButton:hover {
     transform: none;
+  }
+
+  .businessCard:hover {
+    transform: none;
+  }
+
+  .statCard:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .businessModelGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .enhancedSection {
+    margin-bottom: 60px;
+    padding: 40px 16px;
+  }
+
+  .businessCard {
+    padding: 20px;
+  }
+
+  .cardTitle {
+    font-size: 1.25rem;
+  }
+
+  .featureList li {
+    font-size: 0.95rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .statCard {
+    padding: 30px 20px;
+  }
+
+  .statNumber {
+    font-size: 2.5rem;
+  }
+
+  .statLabel {
+    font-size: 0.9rem;
   }
 }
