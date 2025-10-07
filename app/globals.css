@@ -294,8 +294,10 @@ a:hover {
 
 .btn-primary:hover {
   background: var(--color-primary-light);
+  color: var(--color-text);
   box-shadow: var(--glow-primary);
   transform: translateY(-2px);
+  text-decoration: none;
 }
 
 .btn-secondary {
@@ -305,8 +307,10 @@ a:hover {
 
 .btn-secondary:hover {
   background: var(--color-secondary-light);
+  color: var(--color-text);
   box-shadow: var(--glow-secondary);
   transform: translateY(-2px);
+  text-decoration: none;
 }
 
 .btn-outline {
@@ -319,6 +323,7 @@ a:hover {
   background: var(--color-primary);
   color: var(--color-text);
   box-shadow: var(--glow-soft);
+  text-decoration: none;
 }
 
 .btn-lg {
