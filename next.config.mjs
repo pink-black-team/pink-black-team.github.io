@@ -26,32 +26,8 @@ const nextConfig = {
   //   optimizeCss: true, // Requires critters package
   // },
 
-  // Headers for security and caching
-  async headers() {
-    return [
-      {
-        source: '/:path*',
-        headers: [
-          {
-            key: 'X-DNS-Prefetch-Control',
-            value: 'on',
-          },
-          {
-            key: 'X-Frame-Options',
-            value: 'SAMEORIGIN',
-          },
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
-          },
-          {
-            key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin',
-          },
-        ],
-      },
-    ];
-  },
+  // Note: headers, redirects, and rewrites are not supported with static export
+  // Security headers should be configured in your hosting provider (e.g., GitHub Pages)
 
   // i18n is handled by custom I18nProvider in App Router
 };

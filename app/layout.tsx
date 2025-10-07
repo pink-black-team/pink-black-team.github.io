@@ -2,8 +2,6 @@ import type { Metadata } from 'next';
 import './globals.css';
 import ClientLayout from '@/components/ClientLayout';
 
-export const dynamic = 'force-dynamic';
-
 export const metadata: Metadata = {
   title: 'Pink-Black Team | AI Innovation & Investment',
   description: 'Innovative AI development team seeking investment for cutting-edge projects',
