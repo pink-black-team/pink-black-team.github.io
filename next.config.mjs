@@ -5,9 +5,6 @@ const nextConfig = {
   // Static export for GitHub Pages
   output: 'export',
 
-  // Base path for GitHub Pages (repo name)
-  basePath: '/pink-black-team',
-
   // Disable image optimization for static export
   images: {
     unoptimized: true,
