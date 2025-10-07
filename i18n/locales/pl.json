@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "about": "O nas",
+    "projects": "Projekty",
+    "team": "Zespół",
+    "invest": "Inwestycje",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Zespół Pink-Black",
+    "subtitle": "Pionierzy innowacji AI dla rozwiązań jutra",
+    "description": "Jesteśmy czołowym zespołem specjalistów AI tworzących rewolucyjne produkty, które transformują branże. Dołącz do nas w budowaniu przyszłości sztucznej inteligencji.",
+    "ctaPrimary": "Inwestuj w innowacje",
+    "ctaSecondary": "Zobacz projekty",
+    "stats": {
+      "projects": "Projektów AI",
+      "team": "Członków zespołu",
+      "innovation": "Innowacje"
+    }
+  },
+  "about": {
+    "title": "O nas",
+    "subtitle": "Kim jesteśmy",
+    "description": "Pink-Black Team to zespół pasjonatów inżynierów i badaczy AI, którzy dążą do przesunięcia granic sztucznej inteligencji."
+  },
+  "projects": {
+    "title": "Nasze projekty",
+    "subtitle": "Innowacje w działaniu",
+    "viewProject": "Zobacz projekt",
+    "backToProjects": "Powrót do projektów",
+    "ourProjects": {
+      "title": "Nasze Projekty",
+      "subtitle": "Innowacyjne rozwiązania AI, które transformują branże i przyciągają globalne inwestycje",
+      "emptyTitle": "Brak projektów",
+      "emptyText": "Obecnie pracujemy nad ekscytującymi nowymi projektami. Wróć wkrótce!"
+    },
+    "detail": {
+      "techStack": "Stos technologiczny",
+      "links": "Linki",
+      "visitWebsite": "Odwiedź stronę",
+      "tryDemo": "Wypróbuj demo",
+      "viewGithub": "Zobacz na GitHub",
+      "notFound": "Produkt nie znaleziony",
+      "investmentTitle": "Możliwość inwestycyjna",
+      "problem": "Problem",
+      "solution": "Nasze rozwiązanie",
+      "metrics": "Kluczowe metryki",
+      "traction": "Wzrost i rozwój",
+      "request": "Prośba o inwestycję",
+      "contactUs": "Skontaktuj się z nami"
+    },
+    "status": {
+      "active": "Aktywny",
+      "inDevelopment": "W rozwoju",
+      "paused": "Wstrzymany",
+      "featured": "Polecane"
+    }
+  },
+  "team": {
+    "title": "Nasz zespół",
+    "subtitle": "Poznaj innowatorów"
+  },
+  "invest": {
+    "title": "Inwestuj w przyszłość",
+    "subtitle": "Dołącz do naszej wizji",
+    "description": "Zostań naszym partnerem, aby przyspieszyć innowacje AI i tworzyć transformacyjne rozwiązania dla jutra.",
+    "cta": "Skontaktuj się"
+  },
+  "contact": {
+    "title": "Skontaktuj się z nami",
+    "subtitle": "Porozmawiajmy",
+    "form": {
+      "name": "Imię",
+      "email": "Email",
+      "message": "Wiadomość",
+      "submit": "Wyślij wiadomość",
+      "success": "Wiadomość wysłana pomyślnie!",
+      "error": "Nie udało się wysłać wiadomości. Spróbuj ponownie."
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Zespół Pink-Black. Wszelkie prawa zastrzeżone."
+  }
+}

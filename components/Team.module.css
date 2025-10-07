@@ -1,0 +1,44 @@
+.team {
+  background: var(--color-bg-alt);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.title {
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.subtitle {
+  color: var(--color-primary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.avatarWrapper {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto var(--space-lg);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  box-shadow: var(--glow-soft);
+  transition: box-shadow var(--transition-base);
+}
+
+.card:hover .avatarWrapper {
+  box-shadow: var(--glow-primary);
+}
+
+.role {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-sm);
+}

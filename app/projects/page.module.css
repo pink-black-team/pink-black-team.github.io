@@ -1,0 +1,120 @@
+.container {
+  min-height: 100vh;
+  padding: 100px 20px 60px;
+  background: linear-gradient(180deg, #000 0%, #0a0a0a 100%);
+  position: relative;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  color: var(--color-pink);
+  margin: 0 0 20px;
+  text-shadow: 0 0 40px rgba(255, 20, 147, 0.6);
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.emptyState {
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+  padding: 60px 30px;
+  background: rgba(10, 10, 10, 0.6);
+  border: 1px solid rgba(255, 20, 147, 0.2);
+  border-radius: 16px;
+}
+
+.emptyStateTitle {
+  font-size: 1.8rem;
+  color: var(--color-pink);
+  margin: 0 0 16px;
+}
+
+.emptyStateText {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Background effects */
+.backgroundGrid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.05;
+  background-image:
+    linear-gradient(rgba(255, 20, 147, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 20, 147, 0.3) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 80px 16px 40px;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .emptyState {
+    margin: 40px auto;
+    padding: 40px 20px;
+  }
+
+  .emptyStateTitle {
+    font-size: 1.5rem;
+  }
+
+  .emptyStateText {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Accessibility: Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .title {
+    animation: none;
+  }
+}

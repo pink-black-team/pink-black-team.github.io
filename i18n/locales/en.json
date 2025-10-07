@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "team": "Team",
+    "invest": "Invest",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Pink-Black Team",
+    "subtitle": "Pioneering AI Innovation for Tomorrow's Solutions",
+    "description": "We're a cutting-edge team of AI specialists creating revolutionary products that transform industries. Join us in building the future of artificial intelligence.",
+    "ctaPrimary": "Invest in Innovation",
+    "ctaSecondary": "View Projects",
+    "stats": {
+      "projects": "AI Projects",
+      "team": "Team Members",
+      "innovation": "Innovation"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Who We Are",
+    "description": "Pink-Black Team is a collective of passionate AI engineers and researchers dedicated to pushing the boundaries of artificial intelligence."
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Innovation in Action",
+    "viewProject": "View Project",
+    "backToProjects": "Back to Projects",
+    "ourProjects": {
+      "title": "Our Projects",
+      "subtitle": "Innovative AI-powered solutions that are transforming industries and attracting global investment",
+      "emptyTitle": "No Projects Yet",
+      "emptyText": "We are currently working on exciting new projects. Check back soon!"
+    },
+    "detail": {
+      "techStack": "Technology Stack",
+      "links": "Links",
+      "visitWebsite": "Visit Website",
+      "tryDemo": "Try Demo",
+      "viewGithub": "View on GitHub",
+      "notFound": "Product Not Found",
+      "investmentTitle": "Investment Opportunity",
+      "problem": "The Problem",
+      "solution": "Our Solution",
+      "metrics": "Key Metrics",
+      "traction": "Traction & Growth",
+      "request": "Investment Request",
+      "contactUs": "Contact Us"
+    },
+    "status": {
+      "active": "Active",
+      "inDevelopment": "In Development",
+      "paused": "Paused",
+      "featured": "Featured"
+    }
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Meet the Innovators"
+  },
+  "invest": {
+    "title": "Invest in the Future",
+    "subtitle": "Join Our Vision",
+    "description": "Partner with us to accelerate AI innovation and create transformative solutions for tomorrow.",
+    "cta": "Get in Touch"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Let's Talk",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Pink-Black Team. All rights reserved."
+  }
+}
