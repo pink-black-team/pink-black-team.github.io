@@ -69,3 +69,41 @@
 .form button {
   align-self: center;
 }
+
+.successMessage {
+  padding: var(--space-md);
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: var(--radius-md);
+  color: rgb(34, 197, 94);
+  text-align: center;
+  font-weight: var(--font-weight-medium);
+  animation: slideIn 0.3s ease-out;
+}
+
+.errorMessage {
+  padding: var(--space-md);
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: var(--radius-md);
+  color: rgb(239, 68, 68);
+  text-align: center;
+  font-weight: var(--font-weight-medium);
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

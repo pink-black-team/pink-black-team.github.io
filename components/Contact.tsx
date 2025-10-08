@@ -12,11 +12,44 @@ export default function Contact() {
     email: '',
     message: '',
   });
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Implement form submission
-    console.log('Form submitted:', formData);
+    setStatus('loading');
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('http://api.novastorm.ai/v4/pinkblack/mail/contact', {
+        method: 'POST',
+        headers: {
+          'accept': '*/*',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          description: formData.message,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      setStatus('success');
+      setFormData({ name: '', email: '', message: '' });
+
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setStatus('idle');
+      }, 5000);
+    } catch (error) {
+      console.error('Error sending message:', error);
+      setStatus('error');
+      setErrorMessage(error instanceof Error ? error.message : 'Failed to send message');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -71,8 +104,20 @@ export default function Contact() {
               />
             </div>
 
-            <button type="submit" className="btn btn-primary btn-lg">
-              {t.contact.form.submit}
+            {status === 'success' && (
+              <div className={styles.successMessage}>
+                ✓ {t.contact.form.successMessage || 'Message sent successfully! We will get back to you soon.'}
+              </div>
+            )}
+
+            {status === 'error' && (
+              <div className={styles.errorMessage}>
+                ✗ {t.contact.form.errorMessage || 'Failed to send message. Please try again.'} {errorMessage && `(${errorMessage})`}
+              </div>
+            )}
+
+            <button type="submit" className="btn btn-primary btn-lg" disabled={status === 'loading'}>
+              {status === 'loading' ? (t.contact.form.sending || 'Sending...') : t.contact.form.submit}
             </button>
           </form>
         </Reveal>

@@ -1,19 +1,16 @@
 'use client';
 
 import { useI18n } from '@/i18n';
+import { getProductCards } from '@/lib/products';
 import Reveal from './Reveal';
 import Card3D from './Card3D';
 import styles from './Projects.module.css';
 
 export default function Projects() {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
 
-  // Placeholder projects data
-  const projects = [
-    { id: 1, title: 'AI Assistant', description: 'Smart conversational AI', tech: 'GPT-4, Python' },
-    { id: 2, title: 'Computer Vision', description: 'Object detection system', tech: 'TensorFlow, OpenCV' },
-    { id: 3, title: 'NLP Engine', description: 'Natural language processing', tech: 'BERT, PyTorch' },
-  ];
+  // Get real projects data
+  const projects = getProductCards();
 
   return (
     <section id="projects" className={styles.projects}>
@@ -31,11 +28,11 @@ export default function Projects() {
               <Card3D>
                 <div className="card">
                   <div className="card-header">
-                    <h3 className="card-title">{project.title}</h3>
-                    <p className="card-description">{project.description}</p>
+                    <h3 className="card-title">{project.title[locale]}</h3>
+                    <p className="card-description">{project.shortDescription[locale]}</p>
                   </div>
-                  <p className={styles.tech}>{project.tech}</p>
-                  <a href="/projects" className={styles.projectLink}>
+                  <p className={styles.tech}>{project.techStack.slice(0, 3).join(', ')}</p>
+                  <a href={`/projects/${project.slug}`} className={styles.projectLink}>
                     {t.projects.viewProject} →
                   </a>
                 </div>
