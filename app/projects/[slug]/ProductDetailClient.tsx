@@ -138,8 +138,9 @@ export default function ProductDetailClient({ slug }: ProductDetailClientProps) 
     },
   };
 
-  // Check if this is FoodReceipts project for enhanced view
+  // Check if this is FoodReceipts or CheckTruth project for enhanced view
   const isFoodReceipts = product.slug === 'foodreceipts';
+  const isCheckTruth = product.slug === 'checktruth';
 
   return (
     <div className={styles.container}>
@@ -491,6 +492,492 @@ export default function ProductDetailClient({ slug }: ProductDetailClientProps) 
           </Reveal>
         </div>
       </section>
+
+      {/* CheckTruth: Enhanced Sections */}
+      {isCheckTruth && (
+        <>
+          {/* Business Model */}
+          <section className={styles.enhancedSection}>
+            <Reveal>
+              <h2 className={styles.sectionTitle}>
+                {locale === 'en' && '💼 Business Model'}
+                {locale === 'ru' && '💼 Бизнес-модель'}
+                {locale === 'be' && '💼 Бізнес-мадэль'}
+                {locale === 'pl' && '💼 Model biznesowy'}
+                {locale === 'uk' && '💼 Бізнес-модель'}
+              </h2>
+            </Reveal>
+
+            <div className={styles.businessModelGrid}>
+              <Reveal delay={0.1}>
+                <div className={styles.businessCard}>
+                  <h3 className={styles.cardTitle}>
+                    {locale === 'en' && 'Revenue Streams'}
+                    {locale === 'ru' && 'Источники дохода'}
+                    {locale === 'be' && 'Крыніцы даходу'}
+                    {locale === 'pl' && 'Źródła przychodów'}
+                    {locale === 'uk' && 'Джерела доходу'}
+                  </h3>
+                  <ul className={styles.featureList}>
+                    <li>
+                      {locale === 'en' && '🎯 Display advertising on free tier'}
+                      {locale === 'ru' && '🎯 Медийная реклама на бесплатном уровне'}
+                      {locale === 'be' && '🎯 Медыйная рэклама на бясплатным узроўні'}
+                      {locale === 'pl' && '🎯 Reklama displayowa na poziomie darmowym'}
+                      {locale === 'uk' && '🎯 Медійна реклама на безкоштовному рівні'}
+                    </li>
+                    <li>
+                      {locale === 'en' && '💼 Enterprise API ($500-5,000/mo)'}
+                      {locale === 'ru' && '💼 Корпоративный API ($500-5,000/мес)'}
+                      {locale === 'be' && '💼 Карпаратыўны API ($500-5,000/мес)'}
+                      {locale === 'pl' && '💼 API dla firm ($500-5,000/mies)'}
+                      {locale === 'uk' && '💼 Корпоративний API ($500-5,000/міс)'}
+                    </li>
+                    <li>
+                      {locale === 'en' && '📰 Partnerships with media organizations'}
+                      {locale === 'ru' && '📰 Партнерства с медиа-организациями'}
+                      {locale === 'be' && '📰 Партнёрствы з медыя-арганізацыямі'}
+                      {locale === 'pl' && '📰 Partnerstwa z organizacjami medialnymi'}
+                      {locale === 'uk' && '📰 Партнерства з медіа-організаціями'}
+                    </li>
+                    <li>
+                      {locale === 'en' && '🔬 Custom AI solutions for platforms'}
+                      {locale === 'ru' && '🔬 Кастомные AI-решения для платформ'}
+                      {locale === 'be' && '🔬 Кастомныя AI-рашэнні для платформаў'}
+                      {locale === 'pl' && '🔬 Niestandardowe rozwiązania AI dla platform'}
+                      {locale === 'uk' && '🔬 Кастомні AI-рішення для платформ'}
+                    </li>
+                  </ul>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.2}>
+                <div className={styles.businessCard}>
+                  <h3 className={styles.cardTitle}>
+                    {locale === 'en' && 'Target Customers'}
+                    {locale === 'ru' && 'Целевые клиенты'}
+                    {locale === 'be' && 'Мэтавыя кліенты'}
+                    {locale === 'pl' && 'Docelowi klienci'}
+                    {locale === 'uk' && 'Цільові клієнти'}
+                  </h3>
+                  <ul className={styles.featureList}>
+                    <li>
+                      {locale === 'en' && '👥 Individual users (free tools)'}
+                      {locale === 'ru' && '👥 Индивидуальные пользователи (бесплатно)'}
+                      {locale === 'be' && '👥 Індывідуальныя карыстальнікі (бясплатна)'}
+                      {locale === 'pl' && '👥 Użytkownicy indywidualni (za darmo)'}
+                      {locale === 'uk' && '👥 Індивідуальні користувачі (безкоштовно)'}
+                    </li>
+                    <li>
+                      {locale === 'en' && '📰 News & media organizations'}
+                      {locale === 'ru' && '📰 Новостные и медиа-организации'}
+                      {locale === 'be' && '📰 Навінавыя і медыя-арганізацыі'}
+                      {locale === 'pl' && '📰 Organizacje informacyjne i medialne'}
+                      {locale === 'uk' && '📰 Новинні та медіа-організації'}
+                    </li>
+                    <li>
+                      {locale === 'en' && '🏢 Social media platforms'}
+                      {locale === 'ru' && '🏢 Платформы социальных сетей'}
+                      {locale === 'be' && '🏢 Платформы сацыяльных сетак'}
+                      {locale === 'pl' && '🏢 Platformy mediów społecznościowych'}
+                      {locale === 'uk' && '🏢 Платформи соціальних мереж'}
+                    </li>
+                    <li>
+                      {locale === 'en' && '🎓 Educational institutions'}
+                      {locale === 'ru' && '🎓 Образовательные учреждения'}
+                      {locale === 'be' && '🎓 Адукацыйныя ўстановы'}
+                      {locale === 'pl' && '🎓 Instytucje edukacyjne'}
+                      {locale === 'uk' && '🎓 Освітні заклади'}
+                    </li>
+                  </ul>
+                </div>
+              </Reveal>
+            </div>
+          </section>
+
+          {/* Market Analysis */}
+          <section className={styles.enhancedSection}>
+            <Reveal>
+              <h2 className={styles.sectionTitle}>
+                {locale === 'en' && '📈 Market Analysis'}
+                {locale === 'ru' && '📈 Рыночный анализ'}
+                {locale === 'be' && '📈 Рыначны аналіз'}
+                {locale === 'pl' && '📈 Analiza rynku'}
+                {locale === 'uk' && '📈 Ринковий аналіз'}
+              </h2>
+            </Reveal>
+
+            <div className={styles.statsGrid}>
+              <Reveal delay={0.1}>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>$500M+</div>
+                  <div className={styles.statLabel}>
+                    {locale === 'en' && 'Content Moderation Market'}
+                    {locale === 'ru' && 'Рынок модерации контента'}
+                    {locale === 'be' && 'Рынак мадэрацыі кантэнту'}
+                    {locale === 'pl' && 'Rynek moderacji treści'}
+                    {locale === 'uk' && 'Ринок модерації контенту'}
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.2}>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>6x</div>
+                  <div className={styles.statLabel}>
+                    {locale === 'en' && 'Disinfo Spreads Faster'}
+                    {locale === 'ru' && 'Дезинфо быстрее правды'}
+                    {locale === 'be' && 'Дэзінфа хутчэй праўды'}
+                    {locale === 'pl' && 'Dezinfo szybsza niż prawda'}
+                    {locale === 'uk' && 'Дезінфо швидше правди'}
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.3}>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>68%</div>
+                  <div className={styles.statLabel}>
+                    {locale === 'en' && 'Share Without Verifying'}
+                    {locale === 'ru' && 'Делятся без проверки'}
+                    {locale === 'be' && 'Дзеляцца без праверкі'}
+                    {locale === 'pl' && 'Udostępniają bez weryfikacji'}
+                    {locale === 'uk' && 'Діляться без перевірки'}
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.4}>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>8B</div>
+                  <div className={styles.statLabel}>
+                    {locale === 'en' && 'Global Social Media Users'}
+                    {locale === 'ru' && 'Пользователей соцсетей'}
+                    {locale === 'be' && 'Карыстальнікаў соцсетак'}
+                    {locale === 'pl' && 'Użytkowników mediów społecznościowych'}
+                    {locale === 'uk' && 'Користувачів соцмереж'}
+                  </div>
+                </div>
+              </Reveal>
+            </div>
+          </section>
+
+          {/* Growth Projections */}
+          <section className={styles.enhancedSection}>
+            <Reveal>
+              <h2 className={styles.sectionTitle}>
+                {locale === 'en' && '📊 User Growth Projections (2025-2026)'}
+                {locale === 'ru' && '📊 Прогноз роста пользователей (2025-2026)'}
+                {locale === 'be' && '📊 Прагноз росту карыстальнікаў (2025-2026)'}
+                {locale === 'pl' && '📊 Prognozy wzrostu użytkowników (2025-2026)'}
+                {locale === 'uk' && '📊 Прогноз зростання користувачів (2025-2026)'}
+              </h2>
+            </Reveal>
+
+            <Reveal delay={0.2}>
+              <AnimatedChart
+                data={[
+                  { label: 'Q1 2025', value: 1500 },
+                  { label: 'Q2 2025', value: 5000 },
+                  { label: 'Q3 2025', value: 12000 },
+                  { label: 'Q4 2025', value: 25000 },
+                  { label: 'Q2 2026', value: 50000 },
+                  { label: 'Q4 2026', value: 100000 },
+                ]}
+                height={350}
+              />
+            </Reveal>
+
+            <Reveal delay={0.3}>
+              <p style={{ textAlign: 'center', marginTop: '30px', fontSize: '1.1rem', color: 'rgba(255, 255, 255, 0.8)' }}>
+                {locale === 'en' && '🚀 Conservative growth: 25K users + 5 API clients EOY 2025 → 100K users + 20 API clients EOY 2026'}
+                {locale === 'ru' && '🚀 Консервативный рост: 25K пользователей + 5 API клиентов конец 2025 → 100K пользователей + 20 API клиентов конец 2026'}
+                {locale === 'be' && '🚀 Кансерватыўны рост: 25K карыстальнікаў + 5 API кліентаў канец 2025 → 100K карыстальнікаў + 20 API кліентаў канец 2026'}
+                {locale === 'pl' && '🚀 Konserwatywny wzrost: 25K użytkowników + 5 klientów API koniec 2025 → 100K użytkowników + 20 klientów API koniec 2026'}
+                {locale === 'uk' && '🚀 Консервативне зростання: 25K користувачів + 5 API клієнтів кінець 2025 → 100K користувачів + 20 API клієнтів кінець 2026'}
+              </p>
+            </Reveal>
+          </section>
+
+          {/* Roadmap */}
+          <section className={styles.enhancedSection}>
+            <Reveal>
+              <h2 className={styles.sectionTitle}>
+                {locale === 'en' && '🗺️ Product Roadmap'}
+                {locale === 'ru' && '🗺️ Дорожная карта'}
+                {locale === 'be' && '🗺️ Дарожная карта'}
+                {locale === 'pl' && '🗺️ Mapa drogowa'}
+                {locale === 'uk' && '🗺️ Дорожня карта'}
+              </h2>
+            </Reveal>
+
+            <Timeline
+              locale={locale}
+              items={[
+                {
+                  quarter: {
+                    en: 'Q4 2024',
+                    ru: 'Q4 2024',
+                    be: 'Q4 2024',
+                    pl: 'Q4 2024',
+                    uk: 'Q4 2024',
+                  },
+                  title: {
+                    en: 'TikTok Platform Launch',
+                    ru: 'Запуск платформы для TikTok',
+                    be: 'Запуск платформы для TikTok',
+                    pl: 'Uruchomienie platformy TikTok',
+                    uk: 'Запуск платформи для TikTok',
+                  },
+                  description: {
+                    en: 'Audio transcription (6 languages), claim identification, multi-source fact-checking operational.',
+                    ru: 'Транскрипция аудио (6 языков), выявление утверждений, проверка фактов из нескольких источников работает.',
+                    be: 'Транскрыпцыя аўдыё (6 моў), выяўленне сцвярджэнняў, праверка фактаў з некалькіх крыніц працуе.',
+                    pl: 'Transkrypcja audio (6 języków), identyfikacja twierdzeń, sprawdzanie faktów z wielu źródeł działa.',
+                    uk: 'Транскрипція аудіо (6 мов), виявлення тверджень, перевірка фактів з декількох джерел працює.',
+                  },
+                  status: 'completed',
+                },
+                {
+                  quarter: {
+                    en: 'Q1-Q3 2025',
+                    ru: 'Q1-Q3 2025',
+                    be: 'Q1-Q3 2025',
+                    pl: 'Q1-Q3 2025',
+                    uk: 'Q1-Q3 2025',
+                  },
+                  title: {
+                    en: 'Multi-Platform Expansion',
+                    ru: 'Расширение на платформы',
+                    be: 'Пашырэнне на платформы',
+                    pl: 'Ekspansja wieloplatformowa',
+                    uk: 'Розширення на платформи',
+                  },
+                  description: {
+                    en: 'Add Instagram, YouTube, Twitter/X, Facebook support. Launch AI content detection beta. Target: 15K-25K users.',
+                    ru: 'Добавление Instagram, YouTube, Twitter/X, Facebook. Запуск бета AI-детекции. Цель: 15K-25K пользователей.',
+                    be: 'Даданне Instagram, YouTube, Twitter/X, Facebook. Запуск бета AI-дэтэкцыі. Мэта: 15K-25K карыстальнікаў.',
+                    pl: 'Dodanie Instagram, YouTube, Twitter/X, Facebook. Uruchomienie beta detekcji AI. Cel: 15K-25K użytkowników.',
+                    uk: 'Додавання Instagram, YouTube, Twitter/X, Facebook. Запуск бета AI-детекції. Мета: 15K-25K користувачів.',
+                  },
+                  status: 'in-progress',
+                },
+                {
+                  quarter: {
+                    en: 'Q4 2025',
+                    ru: 'Q4 2025',
+                    be: 'Q4 2025',
+                    pl: 'Q4 2025',
+                    uk: 'Q4 2025',
+                  },
+                  title: {
+                    en: 'Enterprise API Beta',
+                    ru: 'Бета корпоративного API',
+                    be: 'Бета карпаратыўнага API',
+                    pl: 'Beta API dla firm',
+                    uk: 'Бета корпоративного API',
+                  },
+                  description: {
+                    en: 'Launch API beta with 3-5 pilot customers. Refine pricing model based on usage patterns.',
+                    ru: 'Запуск бета API с 3-5 пилотными клиентами. Доработка ценовой модели на основе паттернов использования.',
+                    be: 'Запуск бета API з 3-5 пілотнымі кліентамі. Дапрацоўка цэнавай мадэлі на аснове патэрнаў выкарыстання.',
+                    pl: 'Uruchomienie beta API z 3-5 klientami pilotażowymi. Dopracowanie modelu cenowego na podstawie wzorców użycia.',
+                    uk: 'Запуск бета API з 3-5 пілотними клієнтами. Доопрацювання цінової моделі на основі патернів використання.',
+                  },
+                  status: 'planned',
+                },
+                {
+                  quarter: {
+                    en: 'Q1-Q2 2026',
+                    ru: 'Q1-Q2 2026',
+                    be: 'Q1-Q2 2026',
+                    pl: 'Q1-Q2 2026',
+                    uk: 'Q1-Q2 2026',
+                  },
+                  title: {
+                    en: 'API v1.0 & Mobile Apps',
+                    ru: 'API v1.0 и мобильные приложения',
+                    be: 'API v1.0 і мабільныя прыкладанні',
+                    pl: 'API v1.0 i aplikacje mobilne',
+                    uk: 'API v1.0 та мобільні додатки',
+                  },
+                  description: {
+                    en: 'Full API launch, iOS/Android apps. Enhanced AI detection for deepfakes. Target: 40K-60K users, 10-15 API clients.',
+                    ru: 'Полный запуск API, iOS/Android приложения. Улучшенная AI-детекция дипфейков. Цель: 40K-60K пользователей, 10-15 API клиентов.',
+                    be: 'Поўны запуск API, iOS/Android прыкладанні. Паляпшаная AI-дэтэкцыя дыпфейкаў. Мэта: 40K-60K карыстальнікаў, 10-15 API кліентаў.',
+                    pl: 'Pełne uruchomienie API, aplikacje iOS/Android. Ulepszona detekcja deepfake\'ów AI. Cel: 40K-60K użytkowników, 10-15 klientów API.',
+                    uk: 'Повний запуск API, iOS/Android додатки. Покращена AI-детекція дипфейків. Мета: 40K-60K користувачів, 10-15 API клієнтів.',
+                  },
+                  status: 'planned',
+                },
+                {
+                  quarter: {
+                    en: 'Q3-Q4 2026',
+                    ru: 'Q3-Q4 2026',
+                    be: 'Q3-Q4 2026',
+                    pl: 'Q3-Q4 2026',
+                    uk: 'Q3-Q4 2026',
+                  },
+                  title: {
+                    en: 'Scale & Partnerships',
+                    ru: 'Масштабирование и партнерства',
+                    be: 'Маштабаванне і партнёрствы',
+                    pl: 'Skalowanie i partnerstwa',
+                    uk: 'Масштабування та партнерства',
+                  },
+                  description: {
+                    en: 'Media partnerships, browser extensions. Multi-language expansion. Target: 80K-100K users, 20+ API clients.',
+                    ru: 'Партнерства с медиа, браузерные расширения. Расширение языков. Цель: 80K-100K пользователей, 20+ API клиентов.',
+                    be: 'Партнёрствы з медыя, браўзерныя пашырэнні. Пашырэнне моў. Мэта: 80K-100K карыстальнікаў, 20+ API кліентаў.',
+                    pl: 'Partnerstwa medialne, rozszerzenia przeglądarki. Ekspansja językowa. Cel: 80K-100K użytkowników, 20+ klientów API.',
+                    uk: 'Партнерства з медіа, браузерні розширення. Розширення мов. Мета: 80K-100K користувачів, 20+ API клієнтів.',
+                  },
+                  status: 'planned',
+                },
+                {
+                  quarter: {
+                    en: '2027+',
+                    ru: '2027+',
+                    be: '2027+',
+                    pl: '2027+',
+                    uk: '2027+',
+                  },
+                  title: {
+                    en: 'Global Expansion',
+                    ru: 'Глобальная экспансия',
+                    be: 'Глабальная экспансія',
+                    pl: 'Ekspansja globalna',
+                    uk: 'Глобальна експансія',
+                  },
+                  description: {
+                    en: 'International markets, enterprise white-label solutions, educational programs. Target: 500K+ users, enterprise tier clients.',
+                    ru: 'Международные рынки, white-label решения для предприятий, образовательные программы. Цель: 500K+ пользователей, корпоративные клиенты.',
+                    be: 'Міжнародныя рынкі, white-label рашэнні для прадпрыемстваў, адукацыйныя праграмы. Мэта: 500K+ карыстальнікаў, карпаратыўныя кліенты.',
+                    pl: 'Rynki międzynarodowe, rozwiązania white-label dla firm, programy edukacyjne. Cel: 500K+ użytkowników, klienci korporacyjni.',
+                    uk: 'Міжнародні ринки, white-label рішення для підприємств, освітні програми. Мета: 500K+ користувачів, корпоративні клієнти.',
+                  },
+                  status: 'planned',
+                },
+              ]}
+            />
+          </section>
+
+          {/* Financial Projections */}
+          <section className={styles.enhancedSection}>
+            <Reveal>
+              <h2 className={styles.sectionTitle}>
+                {locale === 'en' && '💎 Financial Projections'}
+                {locale === 'ru' && '💎 Финансовые прогнозы'}
+                {locale === 'be' && '💎 Фінансавыя прагнозы'}
+                {locale === 'pl' && '💎 Prognozy finansowe'}
+                {locale === 'uk' && '💎 Фінансові прогнози'}
+              </h2>
+            </Reveal>
+
+            <div className={styles.statsGrid}>
+              <Reveal delay={0.1}>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>$35-55K</div>
+                  <div className={styles.statLabel}>
+                    {locale === 'en' && 'Projected Revenue 2025'}
+                    {locale === 'ru' && 'Прогноз выручки 2025'}
+                    {locale === 'be' && 'Прагноз выручкі 2025'}
+                    {locale === 'pl' && 'Prognozowane przychody 2025'}
+                    {locale === 'uk' && 'Прогноз виручки 2025'}
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.2}>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>$450-600K</div>
+                  <div className={styles.statLabel}>
+                    {locale === 'en' && 'Projected Revenue 2026'}
+                    {locale === 'ru' && 'Прогноз выручки 2026'}
+                    {locale === 'be' && 'Прагноз выручкі 2026'}
+                    {locale === 'pl' && 'Prognozowane przychody 2026'}
+                    {locale === 'uk' && 'Прогноз виручки 2026'}
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.3}>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>100K+</div>
+                  <div className={styles.statLabel}>
+                    {locale === 'en' && 'Free Users EOY 2026'}
+                    {locale === 'ru' && 'Бесплатных польз. конец 2026'}
+                    {locale === 'be' && 'Бясплатных карыст. канец 2026'}
+                    {locale === 'pl' && 'Darmowych użytk. koniec 2026'}
+                    {locale === 'uk' && 'Безкошт. корист. кінець 2026'}
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.4}>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>12-15mo</div>
+                  <div className={styles.statLabel}>
+                    {locale === 'en' && 'Runway with Investment'}
+                    {locale === 'ru' && 'Runway с инвестициями'}
+                    {locale === 'be' && 'Runway з інвестыцыямі'}
+                    {locale === 'pl' && 'Runway z inwestycjami'}
+                    {locale === 'uk' && 'Runway з інвестиціями'}
+                  </div>
+                </div>
+              </Reveal>
+            </div>
+
+            <Reveal delay={0.5}>
+              <div style={{ marginTop: '50px', padding: '30px', background: 'rgba(0, 0, 0, 0.4)', borderRadius: '16px', border: '1px solid rgba(255, 20, 147, 0.3)' }}>
+                <h3 style={{ fontSize: '1.3rem', color: 'var(--color-pink)', marginBottom: '20px' }}>
+                  {locale === 'en' && '💰 Revenue Breakdown (Conservative)'}
+                  {locale === 'ru' && '💰 Разбивка доходов (консервативно)'}
+                  {locale === 'be' && '💰 Разбіўка даходаў (кансерватыўна)'}
+                  {locale === 'pl' && '💰 Podział przychodów (konserwatywnie)'}
+                  {locale === 'uk' && '💰 Розбивка доходів (консервативно)'}
+                </h3>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginBottom: '30px' }}>
+                  <div>
+                    <h4 style={{ color: 'var(--color-pink)', fontSize: '1.1rem', marginBottom: '12px' }}>2025</h4>
+                    <ul className={styles.featureList}>
+                      <li>📊 {locale === 'en' ? 'Display Ads: $8-12K (avg $0.30/user/mo)' : locale === 'ru' ? 'Медийная реклама: $8-12K ($0.30/польз./мес)' : locale === 'be' ? 'Медыйная рэклама: $8-12K ($0.30/карыст./мес)' : locale === 'pl' ? 'Reklamy: $8-12K ($0.30/użytk./mies)' : 'Медійна реклама: $8-12K ($0.30/корист./міс)'}</li>
+                      <li>💼 {locale === 'en' ? 'API Revenue: $27-43K (3-5 clients, $1.5-2K/mo avg)' : locale === 'ru' ? 'API доходы: $27-43K (3-5 клиентов, $1.5-2K/мес)' : locale === 'be' ? 'API даходы: $27-43K (3-5 кліентаў, $1.5-2K/мес)' : locale === 'pl' ? 'Przychody API: $27-43K (3-5 klientów, $1.5-2K/mies)' : 'API доходи: $27-43K (3-5 клієнтів, $1.5-2K/міс)'}</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 style={{ color: 'var(--color-pink)', fontSize: '1.1rem', marginBottom: '12px' }}>2026</h4>
+                    <ul className={styles.featureList}>
+                      <li>📊 {locale === 'en' ? 'Display Ads: $180-270K (avg $0.35/user/mo)' : locale === 'ru' ? 'Медийная реклама: $180-270K ($0.35/польз./мес)' : locale === 'be' ? 'Медыйная рэклама: $180-270K ($0.35/карыст./мес)' : locale === 'pl' ? 'Reklamy: $180-270K ($0.35/użytk./mies)' : 'Медійна реклама: $180-270K ($0.35/корист./міс)'}</li>
+                      <li>💼 {locale === 'en' ? 'API Revenue: $270-330K (15-20 clients, $1.8-2.5K/mo avg)' : locale === 'ru' ? 'API доходы: $270-330K (15-20 клиентов, $1.8-2.5K/мес)' : locale === 'be' ? 'API даходы: $270-330K (15-20 кліентаў, $1.8-2.5K/мес)' : locale === 'pl' ? 'Przychody API: $270-330K (15-20 klientów, $1.8-2.5K/mies)' : 'API доходи: $270-330K (15-20 клієнтів, $1.8-2.5K/міс)'}</li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 style={{ fontSize: '1.3rem', color: 'var(--color-pink)', marginBottom: '20px', marginTop: '30px' }}>
+                  {locale === 'en' && '🎯 Use of Funds ($200-400K)'}
+                  {locale === 'ru' && '🎯 Использование средств ($200-400K)'}
+                  {locale === 'be' && '🎯 Выкарыстанне сродкаў ($200-400K)'}
+                  {locale === 'pl' && '🎯 Wykorzystanie środków ($200-400K)'}
+                  {locale === 'uk' && '🎯 Використання коштів ($200-400K)'}
+                </h3>
+                <ul className={styles.featureList} style={{ fontSize: '1.05rem' }}>
+                  <li>💻 {locale === 'en' ? 'Product Development (45%): Platform expansion, AI improvements, mobile apps' : locale === 'ru' ? 'Разработка продукта (45%): Расширение платформ, улучшение AI, мобильные приложения' : locale === 'be' ? 'Распрацоўка прадукту (45%): Пашырэнне платформаў, паляпшэнне AI, мабільныя прыкладанні' : locale === 'pl' ? 'Rozwój produktu (45%): Ekspansja platform, ulepszenia AI, aplikacje mobilne' : 'Розробка продукту (45%): Розширення платформ, покращення AI, мобільні додатки'}</li>
+                  <li>📢 {locale === 'en' ? 'Marketing & Growth (25%): Content marketing, partnerships, PR campaigns' : locale === 'ru' ? 'Маркетинг и рост (25%): Контент-маркетинг, партнерства, PR-кампании' : locale === 'be' ? 'Маркетынг і рост (25%): Кантэнт-маркетынг, партнёрствы, PR-кампаніі' : locale === 'pl' ? 'Marketing i wzrost (25%): Content marketing, partnerstwa, kampanie PR' : 'Маркетинг та зростання (25%): Контент-маркетинг, партнерства, PR-кампанії'}</li>
+                  <li>👥 {locale === 'en' ? 'Team & Salaries (20%): 2 developers + part-time roles (design, content)' : locale === 'ru' ? 'Команда и зарплаты (20%): 2 разработчика + part-time роли (дизайн, контент)' : locale === 'be' ? 'Каманда і зарплаты (20%): 2 распрацоўшчыка + part-time ролі (дызайн, кантэнт)' : locale === 'pl' ? 'Zespół i pensje (20%): 2 programistów + role part-time (projekt, treść)' : 'Команда та зарплати (20%): 2 розробники + part-time ролі (дизайн, контент)'}</li>
+                  <li>🏢 {locale === 'en' ? 'Infrastructure (10%): Cloud costs, AI APIs, CDN, security, office' : locale === 'ru' ? 'Инфраструктура (10%): Облако, AI API, CDN, безопасность, офис' : locale === 'be' ? 'Інфраструктура (10%): Воблака, AI API, CDN, бяспека, офіс' : locale === 'pl' ? 'Infrastruktura (10%): Chmura, AI API, CDN, bezpieczeństwo, biuro' : 'Інфраструктура (10%): Хмара, AI API, CDN, безпека, офіс'}</li>
+                </ul>
+                <p style={{ marginTop: '25px', fontSize: '0.95rem', color: 'rgba(255, 255, 255, 0.7)', lineHeight: '1.6' }}>
+                  {locale === 'en' && '* Projections based on: 25% organic user growth, 80% ad fill rate, $2-3 CPM, API pricing $1,500-2,500/mo depending on volume. Conservative estimates assume lower conversion rates and slower growth.'}
+                  {locale === 'ru' && '* Прогнозы основаны на: 25% органического роста пользователей, 80% fill rate рекламы, $2-3 CPM, цены API $1,500-2,500/мес в зависимости от объема. Консервативные оценки предполагают низкую конверсию и медленный рост.'}
+                  {locale === 'be' && '* Прагнозы заснаваны на: 25% арганічнага росту карыстальнікаў, 80% fill rate рэкламы, $2-3 CPM, цэны API $1,500-2,500/мес у залежнасці ад аб\'ёму. Кансерватыўныя ацэнкі прадугледжваюць нізкую канверсію і павольны рост.'}
+                  {locale === 'pl' && '* Prognozy oparte na: 25% organicznym wzroście użytkowników, 80% fill rate reklam, $2-3 CPM, cenach API $1,500-2,500/mies w zależności od wolumenu. Konserwatywne szacunki zakładają niższe współczynniki konwersji i wolniejszy wzrost.'}
+                  {locale === 'uk' && '* Прогнози засновані на: 25% органічному зростанні користувачів, 80% fill rate реклами, $2-3 CPM, ціни API $1,500-2,500/міс залежно від обсягу. Консервативні оцінки передбачають низьку конверсію та повільне зростання.'}
+                </p>
+              </div>
+            </Reveal>
+          </section>
+        </>
+      )}
 
       {/* FoodReceipts: Additional Enhanced Sections */}
       {isFoodReceipts && (
