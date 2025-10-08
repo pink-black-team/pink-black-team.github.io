@@ -276,6 +276,141 @@ export const products: Product[] = [
     publishedAt: '2024-12-01T00:00:00Z',
     updatedAt: '2025-10-07T00:00:00Z',
   },
+  {
+    id: '3',
+    slug: 'astrologia-guru',
+    title: {
+      en: 'Astrologia.guru - AI Astrology Platform',
+      ru: 'Astrologia.guru - AI Платформа Астрологии',
+      be: 'Astrologia.guru - AI Платформа Астралогіі',
+      pl: 'Astrologia.guru - Platforma AI Astrologii',
+      uk: 'Astrologia.guru - AI Платформа Астрології',
+    },
+    description: {
+      en: 'AI-powered astrology and tarot reading platform delivering personalized divination services at scale. Currently operational in Polish market with 4 core services: love horoscopes, annual tarot readings, partner compatibility analysis, and natal chart interpretations. Uses GPT-based AI to automate traditional astrological interpretations, enabling unlimited scalability without human astrologers. Revenue model: paid digital readings with 70-85% profit margins. Expanding to Russian, English, Ukrainian, and Belarusian markets. Future: mobile apps, subscription model, and white-label API for astrology businesses.',
+      ru: 'AI-платформа астрологии и таро, предоставляющая персонализированные услуги гаданий в масштабе. В настоящее время работает на польском рынке с 4 основными услугами: любовные гороскопы, годовые таро-чтения, анализ совместимости партнеров и интерпретации натальных карт. Использует AI на базе GPT для автоматизации традиционных астрологических интерпретаций, обеспечивая неограниченную масштабируемость без астрологов-людей. Модель дохода: платные цифровые чтения с маржой 70-85%. Расширение на русский, английский, украинский и белорусский рынки. Будущее: мобильные приложения, модель подписки и white-label API для астрологических бизнесов.',
+      be: 'AI-платформа астралогіі і тара, якая прадастаўляе персаналізаваныя паслугі варажбы ў маштабе. У цяперашні час працуе на польскім рынку з 4 асноўнымі паслугамі: каханыя гараскопы, гадавыя тара-чытанні, аналіз сумяшчальнасці партнёраў і інтэрпрэтацыі натальных карт. Выкарыстоўвае AI на базе GPT для аўтаматызацыі традыцыйных астралагічных інтэрпрэтацый, забяспечваючы неабмежаваную маштабаванасць без астролагаў-людзей. Мадэль даходу: платныя лічбавыя чытанні з маржой 70-85%. Пашырэнне на рускі, англійскі, украінскі і беларускі рынкі. Будучыня: мабільныя прыкладанні, мадэль падпіскі і white-label API для астралагічных бізнесаў.',
+      pl: 'Platforma astrologii i tarota oparta na AI, dostarczająca spersonalizowane usługi wróżbiarskie na skalę. Obecnie działa na rynku polskim z 4 podstawowymi usługami: horoskopy miłosne, roczne czytanie tarota, analiza kompatybilności partnerów i interpretacje kart urodzenia. Wykorzystuje AI oparty na GPT do automatyzacji tradycyjnych interpretacji astrologicznych, umożliwiając nieograniczoną skalowalność bez ludzkich astrologów. Model przychodów: płatne cyfrowe czytania z marżą 70-85%. Rozszerzenie na rynki rosyjski, angielski, ukraiński i białoruski. Przyszłość: aplikacje mobilne, model subskrypcyjny i white-label API dla firm astrologicznych.',
+      uk: 'AI-платформа астрології та таро, що надає персоналізовані послуги ворожіння в масштабі. Наразі працює на польському ринку з 4 основними послугами: любовні гороскопи, річні таро-читання, аналіз сумісності партнерів та інтерпретації натальних карт. Використовує AI на базі GPT для автоматизації традиційних астрологічних інтерпретацій, забезпечуючи необмежену масштабованість без астрологів-людей. Модель доходу: платні цифрові читання з маржею 70-85%. Розширення на російський, англійський, український та білоруський ринки. Майбутнє: мобільні застосунки, модель підписки та white-label API для астрологічних бізнесів.',
+    },
+    shortDescription: {
+      en: 'AI-powered astrology and tarot platform with automated personalized readings',
+      ru: 'AI-платформа астрологии и таро с автоматизированными персональными чтениями',
+      be: 'AI-платформа астралогіі і тара з аўтаматызаванымі персанальнымі чытаннямі',
+      pl: 'Platforma astrologii i tarota AI z automatycznymi spersonalizowanymi czytaniami',
+      uk: 'AI-платформа астрології та таро з автоматизованими персональними читаннями',
+    },
+    techStack: ['Next.js 14', 'OpenAI GPT-4', 'TypeScript', 'PostgreSQL', 'Stripe', 'Google Analytics', 'Facebook Pixel'],
+    thumbnail: {
+      src: '/images/projects/astrologia-guru/thumbnail.jpg',
+      alt: {
+        en: 'Astrologia.guru AI Astrology Platform',
+        ru: 'Astrologia.guru AI Платформа Астрологии',
+        be: 'Astrologia.guru AI Платформа Астралогіі',
+        pl: 'Astrologia.guru Platforma AI Astrologii',
+        uk: 'Astrologia.guru AI Платформа Астрології',
+      },
+      width: 800,
+      height: 600,
+    },
+    links: {
+      website: 'https://astrologia.guru',
+    },
+    investment: {
+      problem: {
+        en: 'The $12B global astrology market is dominated by generic horoscopes and expensive human astrologers ($100-300/session). 40% of adults read horoscopes regularly, but personalized readings are inaccessible due to cost and availability. Traditional astrologers cannot scale - limited to 5-10 clients daily. Polish market (38M population + 10M diaspora) lacks affordable, high-quality personalized astrology services. Customers want instant, private, affordable readings without judgment or scheduling hassles.',
+        ru: 'Мировой рынок астрологии в $12 млрд доминируют общие гороскопы и дорогие астрологи-люди ($100-300/сеанс). 40% взрослых регулярно читают гороскопы, но персонализированные чтения недоступны из-за стоимости и доступности. Традиционные астрологи не масштабируются - ограничены 5-10 клиентами в день. Польский рынок (38М население + 10М диаспора) испытывает недостаток доступных качественных персонализированных астрологических услуг. Клиенты хотят мгновенные, приватные, доступные чтения без осуждения и проблем с расписанием.',
+        be: 'Сусветны рынак астралогіі ў $12 млрд дамінуюць агульныя гараскопы і дарагія астролагі-людзі ($100-300/сеанс). 40% дарослых рэгулярна чытаюць гараскопы, але персаналізаваныя чытанні недаступныя з-за кошту і даступнасці. Традыцыйныя астролагі не маштабуюцца - абмежаваныя 5-10 кліентамі на дзень. Польскі рынак (38М насельніцтва + 10М дыяспара) адчувае недахоп даступных якасных персаналізаваных астралагічных паслуг. Кліенты хочуць імгненныя, прыватныя, даступныя чытанні без асуджэння і праблем з раскладам.',
+        pl: 'Globalny rynek astrologii o wartości 12 miliardów dolarów jest zdominowany przez ogólne horoskopy i drogich ludzkich astrologów (100-300 USD/sesja). 40% dorosłych regularnie czyta horoskopy, ale spersonalizowane czytania są niedostępne ze względu na koszty i dostępność. Tradycyjni astrolodzy nie skalują się - ograniczeni do 5-10 klientów dziennie. Polski rynek (38 mln populacji + 10 mln diaspory) brakuje przystępnych cenowo, wysokiej jakości spersonalizowanych usług astrologicznych. Klienci chcą natychmiastowych, prywatnych, przystępnych czytań bez oceniania lub problemów z harmonogramem.',
+        uk: 'Світовий ринок астрології в $12 млрд домінують загальні гороскопи та дорогі астрологи-люди ($100-300/сеанс). 40% дорослих регулярно читають гороскопи, але персоналізовані читання недоступні через вартість та доступність. Традиційні астрологи не масштабуються - обмежені 5-10 клієнтами на день. Польський ринок (38М населення + 10М діаспора) відчуває нестачу доступних якісних персоналізованих астрологічних послуг. Клієнти хочуть миттєві, приватні, доступні читання без осуду та проблем з розкладом.',
+      },
+      solution: {
+        en: 'Astrologia.guru uses GPT-4 AI to deliver personalized astrology and tarot readings at 1/10th the cost of human astrologers. Currently live with 4 services: love horoscopes, annual tarot, partner compatibility, and natal charts. Average price $12-35 per reading vs. $100-300 for traditional astrologers. Platform operates in Polish, targeting 48M+ Polish speakers globally. AI generates high-quality interpretations in seconds, enabling unlimited scalability. Users provide birth data, receive detailed written analysis via email, can ask follow-up questions. Expanding to Russian, English, Ukrainian, Belarusian markets in 2025-2026. Future: mobile apps, subscription model ($9.99/month unlimited readings), white-label API for astrology businesses.',
+        ru: 'Astrologia.guru использует AI GPT-4 для предоставления персонализированных астрологических и таро-чтений в 10 раз дешевле астрологов-людей. В настоящее время работает с 4 услугами: любовные гороскопы, годовое таро, совместимость партнеров и натальные карты. Средняя цена $12-35 за чтение против $100-300 у традиционных астрологов. Платформа работает на польском, ориентируясь на 48М+ польскоязычных глобально. AI генерирует высококачественные интерпретации за секунды, обеспечивая неограниченную масштабируемость. Пользователи предоставляют данные о рождении, получают детальный письменный анализ по email, могут задавать дополнительные вопросы. Расширение на русский, английский, украинский, белорусский рынки в 2025-2026. Будущее: мобильные приложения, модель подписки ($9.99/месяц безлимитные чтения), white-label API для астрологических бизнесов.',
+        be: 'Astrologia.guru выкарыстоўвае AI GPT-4 для прадастаўлення персаналізаваных астралагічных і тара-чытанняў у 10 разоў танней за астролагаў-людзей. У цяперашні час працуе з 4 паслугамі: каханыя гараскопы, гадавое тара, сумяшчальнасць партнёраў і натальныя карты. Сярэдняя цана $12-35 за чытанне супраць $100-300 у традыцыйных астролагаў. Платформа працуе на польскай, арыентуючыся на 48М+ польскамоўных глабальна. AI генеруе высакаякасныя інтэрпрэтацыі за секунды, забяспечваючы неабмежаваную маштабаванасць. Карыстальнікі прадастаўляюць дадзеныя аб нараджэнні, атрымліваюць дэталёвы пісьмовы аналіз па email, могуць задаваць дадатковыя пытанні. Пашырэнне на рускі, англійскі, украінскі, беларускі рынкі ў 2025-2026. Будучыня: мабільныя прыкладанні, мадэль падпіскі ($9.99/месяц бязлімітныя чытанні), white-label API для астралагічных бізнесаў.',
+        pl: 'Astrologia.guru wykorzystuje AI GPT-4 do dostarczania spersonalizowanych czytań astrologii i tarota za 1/10 ceny ludzkich astrologów. Obecnie działa z 4 usługami: horoskopy miłosne, roczny tarot, kompatybilność partnerów i karty urodzenia. Średnia cena 12-35 USD za czytanie vs. 100-300 USD za tradycyjnych astrologów. Platforma działa po polsku, kierując się do ponad 48 mln osób mówiących po polsku na całym świecie. AI generuje wysokiej jakości interpretacje w sekundach, umożliwiając nieograniczoną skalowalność. Użytkownicy podają dane urodzenia, otrzymują szczegółową pisemną analizę e-mailem, mogą zadawać pytania uzupełniające. Rozszerzenie na rynki rosyjski, angielski, ukraiński, białoruski w latach 2025-2026. Przyszłość: aplikacje mobilne, model subskrypcyjny (9,99 USD/miesiąc nielimitowane czytania), white-label API dla firm astrologicznych.',
+        uk: 'Astrologia.guru використовує AI GPT-4 для надання персоналізованих астрологічних та таро-читань у 10 разів дешевше за астрологів-людей. Наразі працює з 4 послугами: любовні гороскопи, річне таро, сумісність партнерів та натальні карти. Середня ціна $12-35 за читання проти $100-300 у традиційних астрологів. Платформа працює польською, орієнтуючись на 48М+ польськомовних глобально. AI генерує високоякісні інтерпретації за секунди, забезпечуючи необмежену масштабованість. Користувачі надають дані про народження, отримують детальний письмовий аналіз електронною поштою, можуть ставити додаткові питання. Розширення на російський, англійський, український, білоруський ринки у 2025-2026. Майбутнє: мобільні застосунки, модель підписки ($9.99/місяць безлімітні читання), white-label API для астрологічних бізнесів.',
+      },
+      metrics: [
+        {
+          key: {
+            en: 'Platform Status',
+            ru: 'Статус платформы',
+            be: 'Статус платформы',
+            pl: 'Status platformy',
+            uk: 'Статус платформи',
+          },
+          value: 'Live (Polish)',
+          trend: 'up',
+        },
+        {
+          key: {
+            en: 'Services Offered',
+            ru: 'Предлагаемых услуг',
+            be: 'Прапануемых паслуг',
+            pl: 'Oferowanych usług',
+            uk: 'Пропонованих послуг',
+          },
+          value: '4 AI readings',
+          trend: 'stable',
+        },
+        {
+          key: {
+            en: 'Team Size',
+            ru: 'Размер команды',
+            be: 'Памер каманды',
+            pl: 'Wielkość zespołu',
+            uk: 'Розмір команди',
+          },
+          value: '3 founders',
+          trend: 'stable',
+        },
+        {
+          key: {
+            en: 'Profit Margin',
+            ru: 'Маржа прибыли',
+            be: 'Маржа прыбытку',
+            pl: 'Marża zysku',
+            uk: 'Маржа прибутку',
+          },
+          value: '70-85%',
+          trend: 'up',
+        },
+      ],
+      traction: {
+        en: 'Platform operational since Dec 2024, serving Polish market. First large-scale commercial project for 3-person team. Core AI reading engine completed with 4 service types. Currently validating product-market fit and optimizing conversion funnel. 2025 targets: 2,400-6,000 paying customers, $48K-$120K revenue (avg. $20/reading). 2026 targets: 12,000-24,000 customers, $240K-$480K revenue with multi-language expansion. Projections based on 3-5% conversion from blog traffic, $15-25 customer acquisition cost via Facebook/TikTok ads, 10-15% repeat purchase rate. Roadmap: Q1-Q2 2025 marketing scale-up + SEO, Q3-Q4 2025 mobile apps + subscription model, 2026 expansion to RU/EN/UK/BE markets, 2027 white-label API platform. Revenue model: paid one-time readings + future subscription ($9.99/mo) + API licensing.',
+        ru: 'Платформа работает с декабря 2024, обслуживает польский рынок. Первый крупномасштабный коммерческий проект для команды из 3 человек. Основной AI-движок чтения завершен с 4 типами услуг. В настоящее время проверяется соответствие продукта рынку и оптимизация воронки конверсии. Цели 2025: 2,400-6,000 платящих клиентов, $48K-$120K выручки (средний $20/чтение). Цели 2026: 12,000-24,000 клиентов, $240K-$480K выручки с многоязычным расширением. Прогнозы основаны на 3-5% конверсии из трафика блога, $15-25 стоимости привлечения клиента через Facebook/TikTok рекламу, 10-15% повторных покупок. Дорожная карта: Q1-Q2 2025 масштабирование маркетинга + SEO, Q3-Q4 2025 мобильные приложения + модель подписки, 2026 расширение на RU/EN/UK/BE рынки, 2027 white-label API платформа. Модель дохода: платные разовые чтения + будущая подписка ($9.99/мес) + лицензирование API.',
+        be: 'Платформа працуе з снежня 2024, абслугоўвае польскі рынак. Першы маштабны камерцыйны праект для каманды з 3 чалавек. Асноўны AI-рухавік чытання завершаны з 4 тыпамі паслуг. У цяперашні час правяраецца адпаведнасць прадукту рынку і аптымізацыя варонкі канверсіі. Мэты 2025: 2,400-6,000 плацяжных кліентаў, $48K-$120K выручкі (сярэдні $20/чытанне). Мэты 2026: 12,000-24,000 кліентаў, $240K-$480K выручкі з шматмоўным пашырэннем. Прагнозы заснаваны на 3-5% канверсіі з трафіку блога, $15-25 кошту прыцягнення кліента праз Facebook/TikTok рэкламу, 10-15% паўторных пакупак. Дарожная карта: Q1-Q2 2025 маштабаванне маркетынгу + SEO, Q3-Q4 2025 мабільныя прыкладанні + мадэль падпіскі, 2026 пашырэнне на RU/EN/UK/BE рынкі, 2027 white-label API платформа. Мадэль даходу: платныя разовыя чытанні + будучая падпіска ($9.99/мес) + ліцэнзаванне API.',
+        pl: 'Platforma działa od grudnia 2024 r., obsługując rynek polski. Pierwszy projekt komercyjny na dużą skalę dla 3-osobowego zespołu. Podstawowy silnik czytania AI ukończony z 4 typami usług. Obecnie weryfikacja dopasowania produktu do rynku i optymalizacja lejka konwersji. Cele 2025: 2,400-6,000 płacących klientów, 48-120 tys. USD przychodów (średnio 20 USD/czytanie). Cele 2026: 12,000-24,000 klientów, 240-480 tys. USD przychodów z rozszerzeniem wielojęzycznym. Prognozy oparte na 3-5% konwersji z ruchu na blogu, 15-25 USD kosztów pozyskania klienta za pośrednictwem reklam Facebook/TikTok, 10-15% wskaźniku powtórnych zakupów. Plan działania: Q1-Q2 2025 skalowanie marketingu + SEO, Q3-Q4 2025 aplikacje mobilne + model subskrypcyjny, 2026 ekspansja na rynki RU/EN/UK/BE, 2027 platforma white-label API. Model przychodów: płatne jednorazowe czytania + przyszła subskrypcja (9,99 USD/mies.) + licencjonowanie API.',
+        uk: 'Платформа працює з грудня 2024, обслуговує польський ринок. Перший великомасштабний комерційний проект для команди з 3 осіб. Основний AI-двигун читання завершено з 4 типами послуг. Наразі перевіряється відповідність продукту ринку та оптимізація воронки конверсії. Цілі 2025: 2,400-6,000 платних клієнтів, $48K-$120K виручки (середній $20/читання). Цілі 2026: 12,000-24,000 клієнтів, $240K-$480K виручки з багатомовним розширенням. Прогнози засновані на 3-5% конверсії з трафіку блогу, $15-25 вартості залучення клієнта через Facebook/TikTok рекламу, 10-15% повторних покупок. Дорожня карта: Q1-Q2 2025 масштабування маркетингу + SEO, Q3-Q4 2025 мобільні застосунки + модель підписки, 2026 розширення на RU/EN/UK/BE ринки, 2027 white-label API платформа. Модель доходу: платні разові читання + майбутня підписка ($9.99/міс) + ліцензування API.',
+      },
+      request: {
+        round: {
+          en: 'Pre-Seed / Angel',
+          ru: 'Pre-Seed / Angel',
+          be: 'Pre-Seed / Angel',
+          pl: 'Pre-Seed / Angel',
+          uk: 'Pre-Seed / Angel',
+        },
+        amount: {
+          en: '$150K - $300K',
+          ru: '$150K - $300K',
+          be: '$150K - $300K',
+          pl: '$150K - $300K',
+          uk: '$150K - $300K',
+        },
+      },
+      contact: {
+        email: 'invest@pink-black-team.com',
+        telegram: '@pinkblackteam',
+        linkedin: 'https://linkedin.com/company/pink-black-team',
+      },
+    },
+    status: 'active',
+    featured: true,
+    publishedAt: '2024-12-01T00:00:00Z',
+    updatedAt: '2025-10-08T00:00:00Z',
+  },
 ];
 
 /**

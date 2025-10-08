@@ -138,9 +138,10 @@ export default function ProductDetailClient({ slug }: ProductDetailClientProps) 
     },
   };
 
-  // Check if this is FoodReceipts or CheckTruth project for enhanced view
+  // Check if this is FoodReceipts, CheckTruth, or Astrologia.guru project for enhanced view
   const isFoodReceipts = product.slug === 'foodreceipts';
   const isCheckTruth = product.slug === 'checktruth';
+  const isAstrologiaGuru = product.slug === 'astrologia-guru';
 
   return (
     <div className={styles.container}>
@@ -1213,6 +1214,494 @@ export default function ProductDetailClient({ slug }: ProductDetailClientProps) 
                   <li>👥 {locale === 'en' ? 'Team Expansion (20%) - $360K' : locale === 'ru' ? 'Расширение команды (20%) - $360K' : locale === 'be' ? 'Пашырэнне каманды (20%) - $360K' : locale === 'pl' ? 'Rozszerzenie zespołu (20%) - $360K' : 'Розширення команди (20%) - $360K'}</li>
                   <li>🏢 {locale === 'en' ? 'Operations & Infrastructure (10%) - $180K' : locale === 'ru' ? 'Операции и инфраструктура (10%) - $180K' : locale === 'be' ? 'Аперацыі і інфраструктура (10%) - $180K' : locale === 'pl' ? 'Operacje i infrastruktura (10%) - $180K' : 'Операції та інфраструктура (10%) - $180K'}</li>
                 </ul>
+              </div>
+            </Reveal>
+          </section>
+        </>
+      )}
+
+      {/* Astrologia.guru: Enhanced Sections */}
+      {isAstrologiaGuru && (
+        <>
+          {/* Business Model */}
+          <section className={styles.enhancedSection}>
+            <Reveal>
+              <h2 className={styles.sectionTitle}>
+                {locale === 'en' && '💼 Business Model'}
+                {locale === 'ru' && '💼 Бизнес-модель'}
+                {locale === 'be' && '💼 Бізнес-мадэль'}
+                {locale === 'pl' && '💼 Model biznesowy'}
+                {locale === 'uk' && '💼 Бізнес-модель'}
+              </h2>
+            </Reveal>
+
+            <div className={styles.businessModelGrid}>
+              <Reveal delay={0.1}>
+                <div className={styles.businessCard}>
+                  <h3 className={styles.cardTitle}>
+                    {locale === 'en' && 'Revenue Streams'}
+                    {locale === 'ru' && 'Источники дохода'}
+                    {locale === 'be' && 'Крыніцы даходу'}
+                    {locale === 'pl' && 'Źródła przychodów'}
+                    {locale === 'uk' && 'Джерела доходу'}
+                  </h3>
+                  <ul className={styles.featureList}>
+                    <li>
+                      {locale === 'en' && '💫 Paid AI readings ($12-35 per session)'}
+                      {locale === 'ru' && '💫 Платные AI-чтения ($12-35 за сеанс)'}
+                      {locale === 'be' && '💫 Платныя AI-чытанні ($12-35 за сеанс)'}
+                      {locale === 'pl' && '💫 Płatne czytania AI ($12-35 za sesję)'}
+                      {locale === 'uk' && '💫 Платні AI-читання ($12-35 за сеанс)'}
+                    </li>
+                    <li>
+                      {locale === 'en' && '🔄 Subscription model ($9.99/mo unlimited, planned 2025)'}
+                      {locale === 'ru' && '🔄 Модель подписки ($9.99/мес безлимит, план 2025)'}
+                      {locale === 'be' && '🔄 Мадэль падпіскі ($9.99/мес безліміт, план 2025)'}
+                      {locale === 'pl' && '🔄 Model subskrypcyjny ($9.99/mies nielimitowany, plan 2025)'}
+                      {locale === 'uk' && '🔄 Модель підписки ($9.99/міс безліміт, план 2025)'}
+                    </li>
+                    <li>
+                      {locale === 'en' && '🔧 White-label API for astrology businesses'}
+                      {locale === 'ru' && '🔧 White-label API для астро-бизнесов'}
+                      {locale === 'be' && '🔧 White-label API для астра-бізнесаў'}
+                      {locale === 'pl' && '🔧 White-label API dla firm astrologicznych'}
+                      {locale === 'uk' && '🔧 White-label API для астро-бізнесів'}
+                    </li>
+                    <li>
+                      {locale === 'en' && '📊 Affiliate partnerships with lifestyle brands'}
+                      {locale === 'ru' && '📊 Партнерские программы с lifestyle брендами'}
+                      {locale === 'be' && '📊 Партнёрскія праграмы з lifestyle брэндамі'}
+                      {locale === 'pl' && '📊 Programy partnerskie z markami lifestyle'}
+                      {locale === 'uk' && '📊 Партнерські програми з lifestyle брендами'}
+                    </li>
+                  </ul>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.2}>
+                <div className={styles.businessCard}>
+                  <h3 className={styles.cardTitle}>
+                    {locale === 'en' && 'Target Customers'}
+                    {locale === 'ru' && 'Целевые клиенты'}
+                    {locale === 'be' && 'Мэтавыя кліенты'}
+                    {locale === 'pl' && 'Docelowi klienci'}
+                    {locale === 'uk' && 'Цільові клієнти'}
+                  </h3>
+                  <ul className={styles.featureList}>
+                    <li>
+                      {locale === 'en' && '💝 Individuals seeking relationship guidance'}
+                      {locale === 'ru' && '💝 Люди, ищущие советы в отношениях'}
+                      {locale === 'be' && '💝 Людзі, якія шукаюць парады ў адносінах'}
+                      {locale === 'pl' && '💝 Osoby poszukujące wskazówek dotyczących związków'}
+                      {locale === 'uk' && '💝 Люди, які шукають поради у стосунках'}
+                    </li>
+                    <li>
+                      {locale === 'en' && '🌟 Spiritual & self-development enthusiasts'}
+                      {locale === 'ru' && '🌟 Энтузиасты духовности и саморазвития'}
+                      {locale === 'be' && '🌟 Энтузіясты духоўнасці і саморазвіцця'}
+                      {locale === 'pl' && '🌟 Entuzjaści duchowości i rozwoju osobistego'}
+                      {locale === 'uk' && '🌟 Ентузіасти духовності та саморозвитку'}
+                    </li>
+                    <li>
+                      {locale === 'en' && '🔮 Small-scale astrologers (white-label API)'}
+                      {locale === 'ru' && '🔮 Мелкие астрологи (white-label API)'}
+                      {locale === 'be' && '🔮 Дробныя астролагі (white-label API)'}
+                      {locale === 'pl' && '🔮 Mali astrolodzy (white-label API)'}
+                      {locale === 'uk' && '🔮 Дрібні астрологи (white-label API)'}
+                    </li>
+                    <li>
+                      {locale === 'en' && '📱 Media & lifestyle brands (partnerships)'}
+                      {locale === 'ru' && '📱 Медиа и lifestyle бренды (партнерства)'}
+                      {locale === 'be' && '📱 Медыя і lifestyle брэнды (партнёрствы)'}
+                      {locale === 'pl' && '📱 Media i marki lifestyle (partnerstwa)'}
+                      {locale === 'uk' && '📱 Медіа та lifestyle бренди (партнерства)'}
+                    </li>
+                  </ul>
+                </div>
+              </Reveal>
+            </div>
+          </section>
+
+          {/* Market Analysis */}
+          <section className={styles.enhancedSection}>
+            <Reveal>
+              <h2 className={styles.sectionTitle}>
+                {locale === 'en' && '📈 Market Analysis'}
+                {locale === 'ru' && '📈 Рыночный анализ'}
+                {locale === 'be' && '📈 Рыначны аналіз'}
+                {locale === 'pl' && '📈 Analiza rynku'}
+                {locale === 'uk' && '📈 Ринковий аналіз'}
+              </h2>
+            </Reveal>
+
+            <div className={styles.statsGrid}>
+              <Reveal delay={0.1}>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>$12B</div>
+                  <div className={styles.statLabel}>
+                    {locale === 'en' && 'Global Astrology Market'}
+                    {locale === 'ru' && 'Мировой рынок астрологии'}
+                    {locale === 'be' && 'Сусветны рынак астралогіі'}
+                    {locale === 'pl' && 'Globalny rynek astrologii'}
+                    {locale === 'uk' && 'Світовий ринок астрології'}
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.2}>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>70M+</div>
+                  <div className={styles.statLabel}>
+                    {locale === 'en' && 'Polish Speakers Globally'}
+                    {locale === 'ru' && 'Польскоговорящих глобально'}
+                    {locale === 'be' && 'Польскамоўных глабальна'}
+                    {locale === 'pl' && 'Osoby mówiące po polsku na świecie'}
+                    {locale === 'uk' && 'Польськомовних глобально'}
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.3}>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>40%</div>
+                  <div className={styles.statLabel}>
+                    {locale === 'en' && 'Read Horoscopes Regularly'}
+                    {locale === 'ru' && 'Регулярно читают гороскопы'}
+                    {locale === 'be' && 'Рэгулярна чытаюць гараскопы'}
+                    {locale === 'pl' && 'Regularnie czytają horoskopy'}
+                    {locale === 'uk' && 'Регулярно читають гороскопи'}
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.4}>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>70-85%</div>
+                  <div className={styles.statLabel}>
+                    {locale === 'en' && 'Profit Margin (AI vs Human)'}
+                    {locale === 'ru' && 'Маржа (AI vs человек)'}
+                    {locale === 'be' && 'Маржа (AI vs чалавек)'}
+                    {locale === 'pl' && 'Marża (AI vs człowiek)'}
+                    {locale === 'uk' && 'Маржа (AI vs людина)'}
+                  </div>
+                </div>
+              </Reveal>
+            </div>
+          </section>
+
+          {/* Customer Growth Projections */}
+          <section className={styles.enhancedSection}>
+            <Reveal>
+              <h2 className={styles.sectionTitle}>
+                {locale === 'en' && '📊 Paying Customer Growth (2025-2026)'}
+                {locale === 'ru' && '📊 Рост платящих клиентов (2025-2026)'}
+                {locale === 'be' && '📊 Рост плацяжных кліентаў (2025-2026)'}
+                {locale === 'pl' && '📊 Wzrost płacących klientów (2025-2026)'}
+                {locale === 'uk' && '📊 Зростання платних клієнтів (2025-2026)'}
+              </h2>
+            </Reveal>
+
+            <Reveal delay={0.2}>
+              <AnimatedChart
+                data={[
+                  { label: 'Q1 2025', value: 400 },
+                  { label: 'Q2 2025', value: 800 },
+                  { label: 'Q3 2025', value: 1500 },
+                  { label: 'Q4 2025', value: 2800 },
+                  { label: 'Q2 2026', value: 8000 },
+                  { label: 'Q4 2026', value: 16000 },
+                ]}
+                height={350}
+              />
+            </Reveal>
+
+            <Reveal delay={0.3}>
+              <p style={{ textAlign: 'center', marginTop: '30px', fontSize: '1.1rem', color: 'rgba(255, 255, 255, 0.8)' }}>
+                {locale === 'en' && '🚀 Conservative growth: 2,400-6,000 customers EOY 2025 ($48-120K revenue) → 12,000-24,000 customers EOY 2026 ($240-480K revenue)'}
+                {locale === 'ru' && '🚀 Консервативный рост: 2,400-6,000 клиентов конец 2025 ($48-120K выручки) → 12,000-24,000 клиентов конец 2026 ($240-480K выручки)'}
+                {locale === 'be' && '🚀 Кансерватыўны рост: 2,400-6,000 кліентаў канец 2025 ($48-120K выручкі) → 12,000-24,000 кліентаў канец 2026 ($240-480K выручкі)'}
+                {locale === 'pl' && '🚀 Konserwatywny wzrost: 2,400-6,000 klientów koniec 2025 ($48-120K przychodów) → 12,000-24,000 klientów koniec 2026 ($240-480K przychodów)'}
+                {locale === 'uk' && '🚀 Консервативне зростання: 2,400-6,000 клієнтів кінець 2025 ($48-120K виручки) → 12,000-24,000 клієнтів кінець 2026 ($240-480K виручки)'}
+              </p>
+            </Reveal>
+          </section>
+
+          {/* Roadmap */}
+          <section className={styles.enhancedSection}>
+            <Reveal>
+              <h2 className={styles.sectionTitle}>
+                {locale === 'en' && '🗺️ Product Roadmap'}
+                {locale === 'ru' && '🗺️ Дорожная карта'}
+                {locale === 'be' && '🗺️ Дарожная карта'}
+                {locale === 'pl' && '🗺️ Mapa drogowa'}
+                {locale === 'uk' && '🗺️ Дорожня карта'}
+              </h2>
+            </Reveal>
+
+            <Timeline
+              locale={locale}
+              items={[
+                {
+                  quarter: {
+                    en: 'Q4 2024',
+                    ru: 'Q4 2024',
+                    be: 'Q4 2024',
+                    pl: 'Q4 2024',
+                    uk: 'Q4 2024',
+                  },
+                  title: {
+                    en: 'Polish Platform Launch',
+                    ru: 'Запуск польской платформы',
+                    be: 'Запуск польскай платформы',
+                    pl: 'Uruchomienie platformy polskiej',
+                    uk: 'Запуск польської платформи',
+                  },
+                  description: {
+                    en: '4 AI reading services live: love horoscopes, annual tarot, partner compatibility, natal charts. Blog content marketing operational.',
+                    ru: '4 AI-сервиса чтения работают: любовные гороскопы, годовое таро, совместимость партнеров, натальные карты. Контент-маркетинг блога работает.',
+                    be: '4 AI-сэрвісы чытання працуюць: каханыя гараскопы, гадавое тара, сумяшчальнасць партнёраў, натальныя карты. Кантэнт-маркетынг блога працуе.',
+                    pl: '4 usługi czytania AI działają: horoskopy miłosne, roczny tarot, kompatybilność partnerów, karty urodzenia. Marketing treści bloga działa.',
+                    uk: '4 AI-сервіси читання працюють: любовні гороскопи, річне таро, сумісність партнерів, натальні карти. Контент-маркетинг блогу працює.',
+                  },
+                  status: 'completed',
+                },
+                {
+                  quarter: {
+                    en: 'Q1-Q2 2025',
+                    ru: 'Q1-Q2 2025',
+                    be: 'Q1-Q2 2025',
+                    pl: 'Q1-Q2 2025',
+                    uk: 'Q1-Q2 2025',
+                  },
+                  title: {
+                    en: 'Marketing Scale-up & SEO',
+                    ru: 'Масштабирование маркетинга и SEO',
+                    be: 'Маштабаванне маркетынгу і SEO',
+                    pl: 'Skalowanie marketingu i SEO',
+                    uk: 'Масштабування маркетингу та SEO',
+                  },
+                  description: {
+                    en: 'Facebook/TikTok ads, SEO optimization, influencer partnerships. Validate product-market fit. Target: 400-1,200 paying customers.',
+                    ru: 'Facebook/TikTok реклама, SEO-оптимизация, партнерства с инфлюенсерами. Проверка product-market fit. Цель: 400-1,200 платящих клиентов.',
+                    be: 'Facebook/TikTok рэклама, SEO-аптымізацыя, партнёрствы з інфлюэнсерамі. Праверка product-market fit. Мэта: 400-1,200 плацяжных кліентаў.',
+                    pl: 'Reklamy Facebook/TikTok, optymalizacja SEO, partnerstwa z influencerami. Walidacja product-market fit. Cel: 400-1,200 płacących klientów.',
+                    uk: 'Facebook/TikTok реклама, SEO-оптимізація, партнерства з інфлюенсерами. Перевірка product-market fit. Мета: 400-1,200 платних клієнтів.',
+                  },
+                  status: 'in-progress',
+                },
+                {
+                  quarter: {
+                    en: 'Q3-Q4 2025',
+                    ru: 'Q3-Q4 2025',
+                    be: 'Q3-Q4 2025',
+                    pl: 'Q3-Q4 2025',
+                    uk: 'Q3-Q4 2025',
+                  },
+                  title: {
+                    en: 'Mobile Apps + Subscription Model',
+                    ru: 'Мобильные приложения + модель подписки',
+                    be: 'Мабільныя прыкладанні + мадэль падпіскі',
+                    pl: 'Aplikacje mobilne + model subskrypcyjny',
+                    uk: 'Мобільні додатки + модель підписки',
+                  },
+                  description: {
+                    en: 'Launch iOS/Android apps. Introduce $9.99/mo unlimited readings subscription. Enhanced personalization features. Target: 1,500-2,800 customers.',
+                    ru: 'Запуск iOS/Android приложений. Введение подписки $9.99/мес безлимитные чтения. Улучшенная персонализация. Цель: 1,500-2,800 клиентов.',
+                    be: 'Запуск iOS/Android прыкладанняў. Увядзенне падпіскі $9.99/мес бязлімітныя чытанні. Паляпшаная персаналізацыя. Мэта: 1,500-2,800 кліентаў.',
+                    pl: 'Uruchomienie aplikacji iOS/Android. Wprowadzenie subskrypcji $9.99/mies nielimitowane czytania. Ulepszona personalizacja. Cel: 1,500-2,800 klientów.',
+                    uk: 'Запуск iOS/Android додатків. Введення підписки $9.99/міс безліміт читань. Покращена персоналізація. Мета: 1,500-2,800 клієнтів.',
+                  },
+                  status: 'planned',
+                },
+                {
+                  quarter: {
+                    en: 'Q1-Q2 2026',
+                    ru: 'Q1-Q2 2026',
+                    be: 'Q1-Q2 2026',
+                    pl: 'Q1-Q2 2026',
+                    uk: 'Q1-Q2 2026',
+                  },
+                  title: {
+                    en: 'Multi-language Expansion',
+                    ru: 'Многоязычное расширение',
+                    be: 'Шматмоўнае пашырэнне',
+                    pl: 'Ekspansja wielojęzyczna',
+                    uk: 'Багатомовне розширення',
+                  },
+                  description: {
+                    en: 'Launch Russian, English, Ukrainian, Belarusian platforms. Localized marketing campaigns. Target: 4,000-10,000 customers across all markets.',
+                    ru: 'Запуск русской, английской, украинской, белорусской платформ. Локализованные маркетинговые кампании. Цель: 4,000-10,000 клиентов по всем рынкам.',
+                    be: 'Запуск рускай, англійскай, украінскай, беларускай платформаў. Лакалізаваныя маркетынгавыя кампаніі. Мэта: 4,000-10,000 кліентаў па ўсіх рынках.',
+                    pl: 'Uruchomienie platform rosyjskiej, angielskiej, ukraińskiej, białoruskiej. Zlokalizowane kampanie marketingowe. Cel: 4,000-10,000 klientów na wszystkich rynkach.',
+                    uk: 'Запуск російської, англійської, української, білоруської платформ. Локалізовані маркетингові кампанії. Мета: 4,000-10,000 клієнтів по всіх ринках.',
+                  },
+                  status: 'planned',
+                },
+                {
+                  quarter: {
+                    en: 'Q3-Q4 2026',
+                    ru: 'Q3-Q4 2026',
+                    be: 'Q3-Q4 2026',
+                    pl: 'Q3-Q4 2026',
+                    uk: 'Q3-Q4 2026',
+                  },
+                  title: {
+                    en: 'White-label API Beta',
+                    ru: 'Бета white-label API',
+                    be: 'Бета white-label API',
+                    pl: 'Beta white-label API',
+                    uk: 'Бета white-label API',
+                  },
+                  description: {
+                    en: 'Launch API for small astrology businesses. Partner with lifestyle apps and media. Target: 12,000-16,000 direct customers + 3-5 API clients.',
+                    ru: 'Запуск API для мелких астро-бизнесов. Партнерство с lifestyle приложениями и медиа. Цель: 12,000-16,000 прямых клиентов + 3-5 API-клиентов.',
+                    be: 'Запуск API для дробных астра-бізнесаў. Партнёрства з lifestyle прыкладаннямі і медыя. Мэта: 12,000-16,000 прамых кліентаў + 3-5 API-кліентаў.',
+                    pl: 'Uruchomienie API dla małych firm astrologicznych. Partnerstwo z aplikacjami lifestyle i mediami. Cel: 12,000-16,000 bezpośrednich klientów + 3-5 klientów API.',
+                    uk: 'Запуск API для дрібних астро-бізнесів. Партнерство з lifestyle додатками та медіа. Мета: 12,000-16,000 прямих клієнтів + 3-5 API-клієнтів.',
+                  },
+                  status: 'planned',
+                },
+                {
+                  quarter: {
+                    en: '2027+',
+                    ru: '2027+',
+                    be: '2027+',
+                    pl: '2027+',
+                    uk: '2027+',
+                  },
+                  title: {
+                    en: 'Global Scale & B2B Platform',
+                    ru: 'Глобальный масштаб и B2B платформа',
+                    be: 'Глабальны маштаб і B2B платформа',
+                    pl: 'Globalna skala i platforma B2B',
+                    uk: 'Глобальний масштаб та B2B платформа',
+                  },
+                  description: {
+                    en: 'Expand to Spanish, German, French markets. Full white-label platform for astrology businesses. Target: 50K+ customers, 20+ API partners.',
+                    ru: 'Расширение на испанский, немецкий, французский рынки. Полная white-label платформа для астро-бизнесов. Цель: 50K+ клиентов, 20+ API-партнеров.',
+                    be: 'Пашырэнне на іспанскі, нямецкі, французскі рынкі. Поўная white-label платформа для астра-бізнесаў. Мэта: 50K+ кліентаў, 20+ API-партнёраў.',
+                    pl: 'Ekspansja na rynki hiszpański, niemiecki, francuski. Pełna platforma white-label dla firm astrologicznych. Cel: 50K+ klientów, 20+ partnerów API.',
+                    uk: 'Розширення на іспанський, німецький, французький ринки. Повна white-label платформа для астро-бізнесів. Мета: 50K+ клієнтів, 20+ API-партнерів.',
+                  },
+                  status: 'planned',
+                },
+              ]}
+            />
+          </section>
+
+          {/* Financial Projections */}
+          <section className={styles.enhancedSection}>
+            <Reveal>
+              <h2 className={styles.sectionTitle}>
+                {locale === 'en' && '💎 Financial Projections'}
+                {locale === 'ru' && '💎 Финансовые прогнозы'}
+                {locale === 'be' && '💎 Фінансавыя прагнозы'}
+                {locale === 'pl' && '💎 Prognozy finansowe'}
+                {locale === 'uk' && '💎 Фінансові прогнози'}
+              </h2>
+            </Reveal>
+
+            <div className={styles.statsGrid}>
+              <Reveal delay={0.1}>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>$48-120K</div>
+                  <div className={styles.statLabel}>
+                    {locale === 'en' && 'Projected Revenue 2025'}
+                    {locale === 'ru' && 'Прогноз выручки 2025'}
+                    {locale === 'be' && 'Прагноз выручкі 2025'}
+                    {locale === 'pl' && 'Prognozowane przychody 2025'}
+                    {locale === 'uk' && 'Прогноз виручки 2025'}
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.2}>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>$240-480K</div>
+                  <div className={styles.statLabel}>
+                    {locale === 'en' && 'Projected Revenue 2026'}
+                    {locale === 'ru' && 'Прогноз выручки 2026'}
+                    {locale === 'be' && 'Прагноз выручкі 2026'}
+                    {locale === 'pl' && 'Prognozowane przychody 2026'}
+                    {locale === 'uk' && 'Прогноз виручки 2026'}
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.3}>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>6K-24K</div>
+                  <div className={styles.statLabel}>
+                    {locale === 'en' && 'Customers EOY 2026'}
+                    {locale === 'ru' && 'Клиентов конец 2026'}
+                    {locale === 'be' && 'Кліентаў канец 2026'}
+                    {locale === 'pl' && 'Klientów koniec 2026'}
+                    {locale === 'uk' && 'Клієнтів кінець 2026'}
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.4}>
+                <div className={styles.statCard}>
+                  <div className={styles.statNumber}>10-15mo</div>
+                  <div className={styles.statLabel}>
+                    {locale === 'en' && 'Runway with Investment'}
+                    {locale === 'ru' && 'Runway с инвестициями'}
+                    {locale === 'be' && 'Runway з інвестыцыямі'}
+                    {locale === 'pl' && 'Runway z inwestycjami'}
+                    {locale === 'uk' && 'Runway з інвестиціями'}
+                  </div>
+                </div>
+              </Reveal>
+            </div>
+
+            <Reveal delay={0.5}>
+              <div style={{ marginTop: '50px', padding: '30px', background: 'rgba(0, 0, 0, 0.4)', borderRadius: '16px', border: '1px solid rgba(255, 20, 147, 0.3)' }}>
+                <h3 style={{ fontSize: '1.3rem', color: 'var(--color-pink)', marginBottom: '20px' }}>
+                  {locale === 'en' && '💰 Revenue Breakdown (Conservative)'}
+                  {locale === 'ru' && '💰 Разбивка доходов (консервативно)'}
+                  {locale === 'be' && '💰 Разбіўка даходаў (кансерватыўна)'}
+                  {locale === 'pl' && '💰 Podział przychodów (konserwatywnie)'}
+                  {locale === 'uk' && '💰 Розбивка доходів (консервативно)'}
+                </h3>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginBottom: '30px' }}>
+                  <div>
+                    <h4 style={{ color: 'var(--color-pink)', fontSize: '1.1rem', marginBottom: '12px' }}>2025</h4>
+                    <ul className={styles.featureList}>
+                      <li>💫 {locale === 'en' ? 'One-time Readings: $48-120K (2,400-6,000 customers, avg $20/reading)' : locale === 'ru' ? 'Разовые чтения: $48-120K (2,400-6,000 клиентов, средний $20/чтение)' : locale === 'be' ? 'Разовыя чытанні: $48-120K (2,400-6,000 кліентаў, сярэдні $20/чытанне)' : locale === 'pl' ? 'Jednorazowe czytania: $48-120K (2,400-6,000 klientów, śr. $20/czytanie)' : 'Разові читання: $48-120K (2,400-6,000 клієнтів, середній $20/читання)'}</li>
+                      <li>📊 {locale === 'en' ? 'Customer Acquisition Cost: $15-25 (Facebook/TikTok ads)' : locale === 'ru' ? 'Стоимость привлечения: $15-25 (Facebook/TikTok реклама)' : locale === 'be' ? 'Кошт прыцягнення: $15-25 (Facebook/TikTok рэклама)' : locale === 'pl' ? 'Koszt pozyskania: $15-25 (reklamy Facebook/TikTok)' : 'Вартість залучення: $15-25 (Facebook/TikTok реклама)'}</li>
+                      <li>🔄 {locale === 'en' ? 'Repeat Purchase Rate: 10-15% (2-3 readings/year)' : locale === 'ru' ? 'Повторные покупки: 10-15% (2-3 чтения/год)' : locale === 'be' ? 'Паўторныя пакупкі: 10-15% (2-3 чытанні/год)' : locale === 'pl' ? 'Wskaźnik powtórnych zakupów: 10-15% (2-3 czytania/rok)' : 'Повторні покупки: 10-15% (2-3 читання/рік)'}</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 style={{ color: 'var(--color-pink)', fontSize: '1.1rem', marginBottom: '12px' }}>2026</h4>
+                    <ul className={styles.featureList}>
+                      <li>💫 {locale === 'en' ? 'One-time: $140-240K (7,000-12,000 customers)' : locale === 'ru' ? 'Разовые: $140-240K (7,000-12,000 клиентов)' : locale === 'be' ? 'Разовыя: $140-240K (7,000-12,000 кліентаў)' : locale === 'pl' ? 'Jednorazowe: $140-240K (7,000-12,000 klientów)' : 'Разові: $140-240K (7,000-12,000 клієнтів)'}</li>
+                      <li>🔄 {locale === 'en' ? 'Subscriptions: $60-120K (500-1,000 subs @ $9.99/mo)' : locale === 'ru' ? 'Подписки: $60-120K (500-1,000 подписок @ $9.99/мес)' : locale === 'be' ? 'Падпіскі: $60-120K (500-1,000 падпісак @ $9.99/мес)' : locale === 'pl' ? 'Subskrypcje: $60-120K (500-1,000 subskr. @ $9.99/mies)' : 'Підписки: $60-120K (500-1,000 підписок @ $9.99/міс)'}</li>
+                      <li>🔧 {locale === 'en' ? 'White-label API: $40-120K (3-5 partners)' : locale === 'ru' ? 'White-label API: $40-120K (3-5 партнеров)' : locale === 'be' ? 'White-label API: $40-120K (3-5 партнёраў)' : locale === 'pl' ? 'White-label API: $40-120K (3-5 partnerów)' : 'White-label API: $40-120K (3-5 партнерів)'}</li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 style={{ fontSize: '1.3rem', color: 'var(--color-pink)', marginBottom: '20px', marginTop: '30px' }}>
+                  {locale === 'en' && '🎯 Use of Funds ($150-300K)'}
+                  {locale === 'ru' && '🎯 Использование средств ($150-300K)'}
+                  {locale === 'be' && '🎯 Выкарыстанне сродкаў ($150-300K)'}
+                  {locale === 'pl' && '🎯 Wykorzystanie środków ($150-300K)'}
+                  {locale === 'uk' && '🎯 Використання коштів ($150-300K)'}
+                </h3>
+                <ul className={styles.featureList} style={{ fontSize: '1.05rem' }}>
+                  <li>💻 {locale === 'en' ? 'Product Development (35%): Mobile apps, multi-language platforms, AI improvements' : locale === 'ru' ? 'Разработка продукта (35%): Мобильные приложения, мультиязычные платформы, улучшения AI' : locale === 'be' ? 'Распрацоўка прадукту (35%): Мабільныя прыкладанні, шматмоўныя платформы, паляпшэнні AI' : locale === 'pl' ? 'Rozwój produktu (35%): Aplikacje mobilne, platformy wielojęzyczne, ulepszenia AI' : 'Розробка продукту (35%): Мобільні додатки, багатомовні платформи, покращення AI'}</li>
+                  <li>📢 {locale === 'en' ? 'Marketing & Growth (40%): Paid ads (Facebook/TikTok), SEO, influencer partnerships, content' : locale === 'ru' ? 'Маркетинг и рост (40%): Платная реклама (Facebook/TikTok), SEO, партнерства с инфлюенсерами, контент' : locale === 'be' ? 'Маркетынг і рост (40%): Платная рэклама (Facebook/TikTok), SEO, партнёрствы з інфлюэнсерамі, кантэнт' : locale === 'pl' ? 'Marketing i wzrost (40%): Płatne reklamy (Facebook/TikTok), SEO, partnerstwa z influencerami, treść' : 'Маркетинг та зростання (40%): Платна реклама (Facebook/TikTok), SEO, партнерства з інфлюенсерами, контент'}</li>
+                  <li>👥 {locale === 'en' ? 'Team (15%): Part-time developers, content creators, customer support' : locale === 'ru' ? 'Команда (15%): Part-time разработчики, создатели контента, поддержка клиентов' : locale === 'be' ? 'Каманда (15%): Part-time распрацоўшчыкі, стваральнікі кантэнту, падтрымка кліентаў' : locale === 'pl' ? 'Zespół (15%): Programiści part-time, twórcy treści, wsparcie klientów' : 'Команда (15%): Part-time розробники, творці контенту, підтримка клієнтів'}</li>
+                  <li>🏢 {locale === 'en' ? 'Infrastructure (10%): Hosting, GPT-4 API costs, payment processing, tools' : locale === 'ru' ? 'Инфраструктура (10%): Хостинг, GPT-4 API, обработка платежей, инструменты' : locale === 'be' ? 'Інфраструктура (10%): Хостынг, GPT-4 API, апрацоўка плацяжоў, інструменты' : locale === 'pl' ? 'Infrastruktura (10%): Hosting, koszty API GPT-4, przetwarzanie płatności, narzędzia' : 'Інфраструктура (10%): Хостинг, GPT-4 API, обробка платежів, інструменти'}</li>
+                </ul>
+                <p style={{ marginTop: '25px', fontSize: '0.95rem', color: 'rgba(255, 255, 255, 0.7)', lineHeight: '1.6' }}>
+                  {locale === 'en' && '* Projections based on: 3-5% conversion rate from blog traffic, $15-25 CAC via paid ads, 10-15% repeat purchase rate, $20 average order value, 70-85% gross margin. Conservative estimates assume slower market penetration and higher customer acquisition costs.'}
+                  {locale === 'ru' && '* Прогнозы основаны на: 3-5% конверсии из трафика блога, $15-25 CAC через платную рекламу, 10-15% повторных покупок, $20 средний чек, 70-85% валовая маржа. Консервативные оценки предполагают медленное проникновение на рынок и более высокие затраты на привлечение клиентов.'}
+                  {locale === 'be' && '* Прагнозы заснаваны на: 3-5% канверсіі з трафіку блога, $15-25 CAC праз платную рэкламу, 10-15% паўторных пакупак, $20 сярэдні чэк, 70-85% валавая маржа. Кансерватыўныя ацэнкі прадугледжваюць павольнае пранікненне на рынак і больш высокія выдаткі на прыцягненне кліентаў.'}
+                  {locale === 'pl' && '* Prognozy oparte na: 3-5% współczynnika konwersji z ruchu na blogu, $15-25 CAC za pośrednictwem płatnych reklam, 10-15% wskaźniku powtórnych zakupów, $20 średniej wartości zamówienia, 70-85% marży brutto. Konserwatywne szacunki zakładają wolniejszą penetrację rynku i wyższe koszty pozyskania klientów.'}
+                  {locale === 'uk' && '* Прогнози засновані на: 3-5% конверсії з трафіку блогу, $15-25 CAC через платну рекламу, 10-15% повторних покупок, $20 середній чек, 70-85% валова маржа. Консервативні оцінки передбачають повільне проникнення на ринок та вищі витрати на залучення клієнтів.'}
+                </p>
               </div>
             </Reveal>
           </section>
