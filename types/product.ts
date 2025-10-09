@@ -100,7 +100,7 @@ export interface Product {
   investment: InvestmentInfo;
 
   // Status
-  status: 'active' | 'in-development' | 'paused';
+  status: 'active' | 'in-development' | 'paused' | 'planned';
   featured?: boolean;
 
   // Metadata

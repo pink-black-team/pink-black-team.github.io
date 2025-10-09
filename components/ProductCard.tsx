@@ -41,6 +41,13 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
       pl: 'Wstrzymany',
       uk: 'Призупинений',
     },
+    planned: {
+      en: 'Planned',
+      ru: 'Запланирован',
+      be: 'Запланаваны',
+      pl: 'Planowany',
+      uk: 'Запланований',
+    },
   };
 
   const featuredLabel = {
@@ -80,7 +87,9 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
           <span
             className={`${styles.statusBadge} ${
               product.status === 'in-development' ? styles.inDevelopment : ''
-            } ${product.status === 'paused' ? styles.paused : ''}`}
+            } ${product.status === 'paused' ? styles.paused : ''} ${
+              product.status === 'planned' ? styles.planned : ''
+            }`}
             aria-label={statusLabels[product.status][locale]}
           >
             {statusLabels[product.status][locale]}

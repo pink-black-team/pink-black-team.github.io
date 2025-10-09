@@ -29,9 +29,9 @@ export default function Projects() {
                 <div className="card">
                   <div className="card-header">
                     <h3 className="card-title">{project.title[locale]}</h3>
-                    <p className="card-description">{project.shortDescription[locale]}</p>
+                    <p className="card-description">{project.shortDescription?.[locale] || ''}</p>
                   </div>
-                  <p className={styles.tech}>{project.techStack.slice(0, 3).join(', ')}</p>
+                  <p className={styles.tech}>{project.techStack?.slice(0, 3).join(', ') || ''}</p>
                   <a href={`/projects/${project.slug}`} className={styles.projectLink}>
                     {t.projects.viewProject} →
                   </a>
