@@ -27,7 +27,7 @@ export default function Contact() {
     };
 
     try {
-      const response = await fetch('https://api.novastorm.ai/v4/pinkblack/mail/contact', {
+      const response = await fetch('https://dev.novastorm.ai/v4/pinkblack/mail/contact', {
         method: 'POST',
         mode: 'cors',
         headers: {

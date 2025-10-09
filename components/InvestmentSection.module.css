@@ -1,0 +1,199 @@
+.investmentSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  background: rgba(10, 10, 10, 0.6);
+  border-top: 2px solid rgba(255, 20, 147, 0.2);
+  border-bottom: 2px solid rgba(255, 20, 147, 0.2);
+}
+
+.sectionTitle {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--color-pink);
+  text-align: center;
+  margin: 0 0 60px;
+  text-shadow: 0 0 30px rgba(255, 20, 147, 0.5);
+}
+
+.investmentGrid {
+  display: grid;
+  gap: 40px;
+}
+
+.investmentBlock {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 20, 147, 0.3);
+  border-radius: 16px;
+  transition: all 0.4s ease;
+}
+
+.investmentBlock:hover {
+  border-color: rgba(255, 20, 147, 0.6);
+  box-shadow: 0 0 30px rgba(255, 20, 147, 0.2);
+  transform: translateX(8px);
+}
+
+.blockTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-pink);
+  margin: 0 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.blockIcon {
+  font-size: 1.8rem;
+}
+
+.blockText {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.metricCard {
+  padding: 24px;
+  background: rgba(255, 20, 147, 0.05);
+  border: 1px solid rgba(255, 20, 147, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.metricCard:hover {
+  background: rgba(255, 20, 147, 0.1);
+  border-color: rgba(255, 20, 147, 0.4);
+  box-shadow: 0 0 20px rgba(255, 20, 147, 0.2);
+}
+
+.metricValue {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-pink);
+  margin: 0 0 8px;
+  text-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
+}
+
+.metricLabel {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  font-weight: 500;
+}
+
+.metricTrend {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 1.2rem;
+}
+
+.metricTrend.up {
+  color: #00ff88;
+}
+
+.requestBlock {
+  padding: 40px;
+  background: linear-gradient(135deg, rgba(255, 20, 147, 0.1), rgba(0, 0, 0, 0.8));
+  border: 2px solid var(--color-pink);
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(255, 20, 147, 0.3);
+}
+
+.requestTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 12px;
+}
+
+.requestAmount {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--color-pink);
+  margin: 0 0 24px;
+  text-shadow: 0 0 30px rgba(255, 20, 147, 0.8);
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.contactLabel {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 16px;
+}
+
+.contactLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.contactLink:hover {
+  background: rgba(255, 20, 147, 0.2);
+  color: var(--color-pink);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .investmentSection {
+    padding: 60px 20px;
+  }
+
+  .sectionTitle {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .investmentSection {
+    padding: 40px 16px;
+  }
+
+  .investmentBlock {
+    padding: 20px;
+  }
+
+  .blockTitle {
+    font-size: 1.25rem;
+  }
+
+  .metricsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .requestBlock {
+    padding: 30px 20px;
+  }
+
+  .requestTitle {
+    font-size: 1.5rem;
+  }
+
+  .requestAmount {
+    font-size: 2.5rem;
+  }
+}

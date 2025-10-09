@@ -1,0 +1,167 @@
+.hero {
+  padding: 40px 20px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.backLink {
+  display: inline-block;
+  color: var(--color-pink);
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.backLink:hover {
+  text-shadow: 0 0 10px rgba(255, 20, 147, 0.8);
+  transform: translateX(-5px);
+}
+
+.heroContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-pink);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+.techStackLabel {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.techTag {
+  padding: 8px 16px;
+  background: rgba(255, 20, 147, 0.1);
+  border: 1px solid rgba(255, 20, 147, 0.3);
+  color: var(--color-pink);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.techTag:hover {
+  background: rgba(255, 20, 147, 0.2);
+  border-color: rgba(255, 20, 147, 0.5);
+  box-shadow: 0 0 15px rgba(255, 20, 147, 0.3);
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.linkButton {
+  padding: 12px 24px;
+  background: rgba(255, 20, 147, 0.1);
+  border: 1px solid rgba(255, 20, 147, 0.3);
+  color: var(--color-pink);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.linkButton.primary {
+  background: rgba(255, 20, 147, 0.9);
+  color: #fff;
+  border-color: transparent;
+}
+
+.linkButton:hover {
+  background: rgba(255, 20, 147, 0.2);
+  border-color: rgba(255, 20, 147, 0.5);
+  box-shadow: 0 0 20px rgba(255, 20, 147, 0.4);
+  transform: translateY(-2px);
+}
+
+.linkButton.primary:hover {
+  background: rgba(255, 20, 147, 1);
+  box-shadow: 0 0 30px rgba(255, 20, 147, 0.6);
+}
+
+.heroImage {
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 20, 147, 0.3);
+  box-shadow: 0 0 40px rgba(255, 20, 147, 0.3);
+}
+
+.thumbnailImage {
+  object-fit: cover;
+}
+
+.placeholderImage {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 20, 147, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .heroContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  .linkButton {
+    width: 100%;
+    text-align: center;
+  }
+}
