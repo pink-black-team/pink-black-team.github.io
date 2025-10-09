@@ -20,22 +20,31 @@ export default function Contact() {
     setStatus('loading');
     setErrorMessage('');
 
+    const payload = {
+      name: formData.name,
+      email: formData.email,
+      description: formData.message,
+    };
+
     try {
       const response = await fetch('http://api.novastorm.ai/v4/pinkblack/mail/contact', {
         method: 'POST',
+        mode: 'cors',
         headers: {
-          'accept': '*/*',
+          'Accept': '*/*',
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          description: formData.message,
-        }),
+        body: JSON.stringify(payload),
       });
 
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        let errorText = '';
+        try {
+          errorText = await response.text();
+        } catch (e) {
+          errorText = 'Could not read error response';
+        }
+        throw new Error(`HTTP ${response.status}: ${errorText || response.statusText}`);
       }
 
       setStatus('success');
@@ -46,9 +55,17 @@ export default function Contact() {
         setStatus('idle');
       }, 5000);
     } catch (error) {
-      console.error('Error sending message:', error);
       setStatus('error');
-      setErrorMessage(error instanceof Error ? error.message : 'Failed to send message');
+
+      let errorMsg = 'Failed to send message';
+      if (error instanceof Error) {
+        if (error.message.includes('Failed to fetch') || error.message.includes('NetworkError')) {
+          errorMsg = 'Network error. Please check CORS settings or try again.';
+        } else {
+          errorMsg = error.message;
+        }
+      }
+      setErrorMessage(errorMsg);
     }
   };
 
@@ -116,7 +133,11 @@ export default function Contact() {
               </div>
             )}
 
-            <button type="submit" className="btn btn-primary btn-lg" disabled={status === 'loading'}>
+            <button
+              type="submit"
+              className="btn btn-primary btn-lg"
+              disabled={status === 'loading'}
+            >
               {status === 'loading' ? (t.contact.form.sending || 'Sending...') : t.contact.form.submit}
             </button>
           </form>
