@@ -30,7 +30,7 @@ export const products: Product[] = [
     },
     techStack: ['.Net 9.0','Next.js 14', 'Azure OpenAI', 'TypeScript', 'PostgreSQL', 'Circle CI', 'Digital Ocean', 'Docker', 'Bunny.net CDN'],
     thumbnail: {
-      src: '/images/projects/checktruth/thumbnail.jpg',
+      src: '/images/projects/checktruth/thumbnail.png',
       alt: {
         en: 'CheckTruth Fact-Checking Platform',
         ru: 'CheckTruth Платформа Проверки Фактов',
@@ -129,13 +129,13 @@ export const products: Product[] = [
           uk: '$200K - $400K',
         },
       },
-      contact: {
-        email: 'invest@pink-black-team.com',
-        telegram: '@pinkblackteam',
-        linkedin: 'https://linkedin.com/company/pink-black-team',
-      },
+        contact: {
+            email: 'wayworldhelp@gmail.com',
+            telegram: '@mieo196',
+            linkedin: '',
+        },
     },
-    status: 'active',
+    status: 'in-development',
     featured: true,
     publishedAt: '2024-12-01T00:00:00Z',
     updatedAt: '2025-10-08T00:00:00Z',
@@ -166,7 +166,7 @@ export const products: Product[] = [
     },
     techStack: ['.Net 9.0','Next.js 14', 'Azure OpenAI', 'TypeScript', 'PostgreSQL', 'Circle CI', 'Digital Ocean', 'Docker', 'Bunny.net CDN', 'React Native'],
     thumbnail: {
-      src: '/images/projects/foodreceipts/thumbnail.jpg',
+      src: '/images/projects/foodreceipts/thumbnail.png',
       alt: {
         en: 'FoodReceipts AI Recipe Platform',
         ru: 'FoodReceipts AI Платформа Рецептов',
@@ -265,13 +265,13 @@ export const products: Product[] = [
           uk: '$150K - $300K',
         },
       },
-      contact: {
-        email: 'invest@pink-black-team.com',
-        telegram: '@pinkblackteam',
-        linkedin: 'https://linkedin.com/company/pink-black-team',
-      },
+        contact: {
+            email: 'wayworldhelp@gmail.com',
+            telegram: '@mieo196',
+            linkedin: '',
+        },
     },
-    status: 'active',
+    status: 'in-development',
     featured: true,
     publishedAt: '2024-12-01T00:00:00Z',
     updatedAt: '2025-10-07T00:00:00Z',
@@ -302,7 +302,7 @@ export const products: Product[] = [
     },
     techStack: ['.Net 9.0','Next.js 14', 'Azure OpenAI', 'TypeScript', 'PostgreSQL', 'Circle CI', 'Digital Ocean', 'Docker', 'Bunny.net CDN'],
     thumbnail: {
-      src: '/images/projects/astrologia-guru/thumbnail.jpg',
+      src: '/images/projects/astrologia-guru/thumbnail.png',
       alt: {
         en: 'Astrologia.guru AI Astrology Platform',
         ru: 'Astrologia.guru AI Платформа Астрологии',
@@ -400,11 +400,11 @@ export const products: Product[] = [
           uk: '$50K - $100K',
         },
       },
-      contact: {
-        email: 'invest@pink-black-team.com',
-        telegram: '@pinkblackteam',
-        linkedin: 'https://linkedin.com/company/pink-black-team',
-      },
+        contact: {
+            email: 'wayworldhelp@gmail.com',
+            telegram: '@mieo196',
+            linkedin: '',
+        },
     },
     status: 'active',
     featured: true,
@@ -437,7 +437,7 @@ export const products: Product[] = [
     },
     techStack: ['.Net 9.0','Next.js 14', 'Azure OpenAI', 'TypeScript', 'PostgreSQL', 'Circle CI', 'Digital Ocean', 'Docker', 'Bunny.net CDN'],
     thumbnail: {
-      src: '/images/projects/novastorm-ai/thumbnail.jpg',
+      src: '/images/projects/novastorm-ai/thumbnail.png',
       alt: {
         en: 'NovaStorm AI Video Creation Platform',
         ru: 'NovaStorm AI Платформа Создания Видео',
@@ -536,12 +536,12 @@ export const products: Product[] = [
         },
       },
       contact: {
-        email: 'invest@pink-black-team.com',
-        telegram: '@pinkblackteam',
-        linkedin: 'https://linkedin.com/company/pink-black-team',
+        email: 'wayworldhelp@gmail.com',
+        telegram: '@mieo196',
+        linkedin: '',
       },
     },
-    status: 'planned',
+    status: 'in-development',
     featured: true,
     publishedAt: '2025-10-08T00:00:00Z',
     updatedAt: '2025-10-08T00:00:00Z',
