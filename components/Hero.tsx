@@ -42,11 +42,11 @@ export default function Hero() {
 
           <div className={styles.heroStats}>
             <div className={styles.stat}>
-              <div className={styles.statValue}>5+</div>
+              <div className={styles.statValue}>4</div>
               <div className={styles.statLabel}>{t.hero.stats.projects}</div>
             </div>
             <div className={styles.stat}>
-              <div className={styles.statValue}>3-7</div>
+              <div className={styles.statValue}>3</div>
               <div className={styles.statLabel}>{t.hero.stats.team}</div>
             </div>
             <div className={styles.stat}>
