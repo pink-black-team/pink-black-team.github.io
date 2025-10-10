@@ -11,9 +11,9 @@ export default function Team() {
 
   // Placeholder team data
   const team = [
-    { id: 1, name: 'Alex Smith', role: 'CEO & AI Lead', bio: 'AI researcher with 10+ years experience' },
-    { id: 2, name: 'Jordan Lee', role: 'CTO', bio: 'Full-stack developer and ML engineer' },
-    { id: 3, name: 'Sam Taylor', role: 'Data Scientist', bio: 'Expert in deep learning and NLP' },
+    { id: 1, name: 'Angelina Magidova', role: 'Co-founder', bio: 'Software engineer/Frontend & other', image: '/images/avatars/avatar1.jpg' },
+    { id: 2, name: 'Uladzimir Pranevich', role: 'Founder', bio: 'Software engineer/Backend & other', image: '/images/avatars/avatar2.jpeg' },
+    { id: 3, name: 'Volha Sakalouskaya', role: 'Co-founder', bio: 'Software engineer/QA & other', image: '/images/avatars/avatar3.png' },
   ];
 
   return (
@@ -32,7 +32,17 @@ export default function Team() {
               <Card3D>
                 <div className="card">
                   <div className={styles.avatarWrapper}>
-                    <Avatar name={member.name} size={120} />
+                    {member.image ? (
+                      <img
+                        src={member.image}
+                        alt={`${member.name} avatar`}
+                        width={120}
+                        height={120}
+                        style={{ borderRadius: '50%', objectFit: 'cover' }}
+                      />
+                    ) : (
+                      <Avatar name={member.name} size={120} />
+                    )}
                   </div>
                   <h3 className="card-title">{member.name}</h3>
                   <p className={styles.role}>{member.role}</p>
