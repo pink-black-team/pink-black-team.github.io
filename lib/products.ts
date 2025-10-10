@@ -28,7 +28,7 @@ export const products: Product[] = [
       pl: 'Sprawdzanie faktów i wykrywanie deepfake\'ów za pomocą AI',
       uk: 'Перевірка фактів та виявлення дипфейків за допомогою AI',
     },
-    techStack: ['Next.js 14', 'Python', 'OpenAI Whisper', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Redis', 'TensorFlow'],
+    techStack: ['.Net 9.0','Next.js 14', 'Azure OpenAI', 'TypeScript', 'PostgreSQL', 'Circle CI', 'Digital Ocean', 'Docker', 'Bunny.net CDN'],
     thumbnail: {
       src: '/images/projects/checktruth/thumbnail.jpg',
       alt: {
@@ -42,8 +42,8 @@ export const products: Product[] = [
       height: 600,
     },
     links: {
-      website: 'https://checktruth.pink-black-team.com',
-      github: 'https://github.com/pink-black-team/checktruth',
+      website: 'https://checktiktok.com',
+      github: '',
     },
     investment: {
       problem: {
@@ -164,7 +164,7 @@ export const products: Product[] = [
       pl: 'Platforma AI do wyodrębniania przepisów i zakupów spożywczych',
       uk: 'AI-платформа для витягування рецептів та покупки продуктів',
     },
-    techStack: ['ASP.NET Core 9', 'Next.js 14', 'Azure OpenAI', 'PostgreSQL 16', 'Redis', 'Docker', 'TypeScript', 'Dapper'],
+    techStack: ['.Net 9.0','Next.js 14', 'Azure OpenAI', 'TypeScript', 'PostgreSQL', 'Circle CI', 'Digital Ocean', 'Docker', 'Bunny.net CDN', 'React Native'],
     thumbnail: {
       src: '/images/projects/foodreceipts/thumbnail.jpg',
       alt: {
@@ -178,8 +178,8 @@ export const products: Product[] = [
       height: 600,
     },
     links: {
-      github: 'https://github.com/pink-black-team/foodreceipts',
-      demo: 'https://foodreceipts.pink-black-team.com',
+      github: '',
+      demo: 'https://cdn.novastorm.ai/pink-black/Screen%20Recording%202025-09-25%20at%2018.53.38.mp4',
     },
     investment: {
       problem: {
@@ -300,7 +300,7 @@ export const products: Product[] = [
       pl: 'Platforma astrologii i tarota AI z automatycznymi spersonalizowanymi czytaniami',
       uk: 'AI-платформа астрології та таро з автоматизованими персональними читаннями',
     },
-    techStack: ['Next.js 14', 'OpenAI GPT-4', 'TypeScript', 'PostgreSQL', 'Stripe', 'Google Analytics', 'Facebook Pixel'],
+    techStack: ['.Net 9.0','Next.js 14', 'Azure OpenAI', 'TypeScript', 'PostgreSQL', 'Circle CI', 'Digital Ocean', 'Docker', 'Bunny.net CDN'],
     thumbnail: {
       src: '/images/projects/astrologia-guru/thumbnail.jpg',
       alt: {
@@ -435,7 +435,7 @@ export const products: Product[] = [
       pl: 'Generowanie filmów AI z wbudowanym sprawdzaniem faktów',
       uk: 'Створення AI-відео з вбудованою перевіркою фактів',
     },
-    techStack: ['Next.js 14', 'Python FastAPI', 'Stable Diffusion', 'ElevenLabs TTS', 'OpenAI GPT-4', 'PostgreSQL', 'FFmpeg', 'TypeScript'],
+    techStack: ['.Net 9.0','Next.js 14', 'Azure OpenAI', 'TypeScript', 'PostgreSQL', 'Circle CI', 'Digital Ocean', 'Docker', 'Bunny.net CDN'],
     thumbnail: {
       src: '/images/projects/novastorm-ai/thumbnail.jpg',
       alt: {
