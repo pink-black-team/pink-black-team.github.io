@@ -115,11 +115,11 @@ export const products: Product[] = [
       },
       request: {
         round: {
-          en: 'Pre-Seed / Angel',
-          ru: 'Pre-Seed / Angel',
-          be: 'Pre-Seed / Angel',
-          pl: 'Pre-Seed / Angel',
-          uk: 'Pre-Seed / Angel',
+          en: 'Pre-Seed',
+          ru: 'Pre-Seed',
+          be: 'Pre-Seed',
+          pl: 'Pre-Seed',
+          uk: 'Pre-Seed',
         },
         amount: {
           en: '$200K - $300K',
@@ -251,11 +251,11 @@ export const products: Product[] = [
       },
       request: {
         round: {
-          en: 'Pre-Seed / Angel',
-          ru: 'Pre-Seed / Angel',
-          be: 'Pre-Seed / Angel',
-          pl: 'Pre-Seed / Angel',
-          uk: 'Pre-Seed / Angel',
+          en: 'Pre-Seed',
+          ru: 'Pre-Seed',
+          be: 'Pre-Seed',
+          pl: 'Pre-Seed',
+          uk: 'Pre-Seed',
         },
         amount: {
           en: '$150K - $300K',
@@ -386,11 +386,11 @@ export const products: Product[] = [
       },
       request: {
         round: {
-          en: 'Pre-Seed / Angel',
-          ru: 'Pre-Seed / Angel',
-          be: 'Pre-Seed / Angel',
-          pl: 'Pre-Seed / Angel',
-          uk: 'Pre-Seed / Angel',
+          en: 'Pre-Seed',
+          ru: 'Pre-Seed',
+          be: 'Pre-Seed',
+          pl: 'Pre-Seed',
+          uk: 'Pre-Seed',
         },
         amount: {
           en: '$50K - $100K',
@@ -513,19 +513,19 @@ export const products: Product[] = [
         },
       ],
       traction: {
-        en: 'Project currently in concept/planning phase. First large-scale project for 3-person founding team. Vision: all-in-one marketing automation platform eliminating routine content tasks for marketers. MVP development timeline: Q4 2025 (AI content generation, 3-account management, TikTok/Instagram focus). Public launch: Mid 2026. Year 1 (2H 2026) projections: 200-350 paying customers (100 Starter @ $49/mo, 30 Business @ $149/mo, 3 Enterprise @ $499/mo), $65-95K revenue. Year 2 (2027): 660 paying customers (500 Starter, 150 Business, 10 Enterprise), $622K revenue (conservative). Year 3 (2028): 1,625 paying (1,200 Starter, 400 Business, 25 Enterprise), $1.57M revenue. Conservative projections based on: $40-60 CAC via content marketing + paid ads, 12-15% free-to-paid conversion, 70-75% gross margin (AI processing costs), 4-6% monthly churn, avg 18-month customer lifetime. Target markets: marketing agencies (30%), SMBs (40%), e-commerce (20%), influencers (10%). Roadmap: Q4 2025 MVP completion, Mid 2026 public launch, 2027 advanced analytics + API access, 2028+ global scale (mobile apps, white-label solutions).',
-        ru: 'Проект в настоящее время на стадии концепции/планирования. Первый крупномасштабный проект команды из 3 основателей. Видение: универсальная платформа автоматизации маркетинга, устраняющая рутинные задачи по контенту для маркетологов. Сроки разработки MVP: Q4 2025 (AI-генерация контента, управление 3 аккаунтами, фокус на TikTok/Instagram). Публичный запуск: Середина 2026. Прогнозы Год 1 (2H 2026): 200-350 платящих клиентов (100 Starter @ $49/мес, 30 Business @ $149/мес, 3 Enterprise @ $499/мес), $65-95K выручки. Год 2 (2027): 660 платящих клиентов (500 Starter, 150 Business, 10 Enterprise), $622K выручки (консервативно). Год 3 (2028): 1,625 платящих (1,200 Starter, 400 Business, 25 Enterprise), $1.57M выручки. Консервативные прогнозы основаны на: $40-60 CAC через контент-маркетинг + платную рекламу, 12-15% конверсия бесплатных в платных, 70-75% валовая маржа (затраты на AI-обработку), 4-6% месячный отток, средний lifetime клиента 18 месяцев. Целевые рынки: маркетинговые агенства (30%), МСБ (40%), e-commerce (20%), инфлюенсеры (10%). Дорожная карта: Q4 2025 завершение MVP, Середина 2026 публичный запуск, 2027 расширенная аналитика + API-доступ, 2028+ глобальный масштаб (мобильные приложения, white-label решения).',
-        be: 'Праект у цяперашні час на стадыі канцэпцыі/планавання. Першы маштабны праект каманды з 3 заснавальнікаў. Бачанне: універсальная платформа аўтаматызацыі маркетынгу, якая ліквідуе рутынныя задачы па кантэнту для маркетолагаў. Тэрміны распрацоўкі MVP: Q4 2025 (AI-генерацыя кантэнту, кіраванне 3 акаўнтамі, фокус на TikTok/Instagram). Публічны запуск: Сярэдзіна 2026. Прагнозы Год 1 (2H 2026): 200-350 плацяжных кліентаў (100 Starter @ $49/мес, 30 Business @ $149/мес, 3 Enterprise @ $499/мес), $65-95K выручкі. Год 2 (2027): 660 плацяжных кліентаў (500 Starter, 150 Business, 10 Enterprise), $622K выручкі (кансерватыўна). Год 3 (2028): 1,625 плацяжных (1,200 Starter, 400 Business, 25 Enterprise), $1.57M выручкі. Кансерватыўныя прагнозы заснаваны на: $40-60 CAC праз кантэнт-маркетынг + платную рэкламу, 12-15% канверсія бясплатных у платных, 70-75% валавая маржа (выдаткі на AI-апрацоўку), 4-6% месячны адток, сярэдні lifetime кліента 18 месяцаў. Мэтавыя рынкі: маркетынгавыя агенцтвы (30%), МСБ (40%), e-commerce (20%), інфлюенсеры (10%). Дарожная карта: Q4 2025 завяршэнне MVP, Сярэдзіна 2026 публічны запуск, 2027 пашыраная аналітыка + API-доступ, 2028+ глабальны маштаб (мабільныя прыкладанні, white-label рашэнні).',
-        pl: 'Projekt obecnie w fazie koncepcji/planowania. Pierwszy projekt na dużą skalę dla 3-osobowego zespołu założycielskiego. Wizja: kompleksowa platforma automatyzacji marketingu eliminująca rutynowe zadania związane z treścią dla marketerów. Harmonogram rozwoju MVP: Q4 2025 (generowanie treści AI, zarządzanie 3 kontami, fokus na TikTok/Instagram). Publiczne uruchomienie: Połowa 2026. Prognozy Rok 1 (2H 2026): 200-350 płacących klientów (100 Starter @ 49 USD/mies, 30 Business @ 149 USD/mies, 3 Enterprise @ 499 USD/mies), 65-95 tys. USD przychodów. Rok 2 (2027): 660 płacących klientów (500 Starter, 150 Business, 10 Enterprise), 622 tys. USD przychodów (konserwatywnie). Rok 3 (2028): 1,625 płacących (1,200 Starter, 400 Business, 25 Enterprise), 1.57 mln USD przychodów. Konserwatywne prognozy oparte na: 40-60 USD CAC przez content marketing + płatne reklamy, 12-15% konwersja bezpłatnych na płatne, 70-75% marża brutto (koszty przetwarzania AI), 4-6% miesięczny churn, średni lifetime klienta 18 miesięcy. Rynki docelowe: agencje marketingowe (30%), MŚP (40%), e-commerce (20%), influencerzy (10%). Plan działania: Q4 2025 ukończenie MVP, Połowa 2026 publiczne uruchomienie, 2027 zaawansowana analityka + dostęp API, 2028+ globalny zasięg (aplikacje mobilne, rozwiązania white-label).',
-        uk: 'Проєкт наразі на стадії концепції/планування. Перший великомасштабний проект команди з 3 засновників. Бачення: універсальна платформа автоматизації маркетингу, яка усуває рутинні завдання з контенту для маркетологів. Терміни розробки MVP: Q4 2025 (AI-генерація контенту, управління 3 акаунтами, фокус на TikTok/Instagram). Публічний запуск: Середина 2026. Прогнози Рік 1 (2H 2026): 200-350 платних клієнтів (100 Starter @ $49/міс, 30 Business @ $149/міс, 3 Enterprise @ $499/міс), $65-95K виручки. Рік 2 (2027): 660 платних клієнтів (500 Starter, 150 Business, 10 Enterprise), $622K виручки (консервативно). Рік 3 (2028): 1,625 платних (1,200 Starter, 400 Business, 25 Enterprise), $1.57M виручки. Консервативні прогнози засновані на: $40-60 CAC через контент-маркетинг + платну рекламу, 12-15% конверсія безкоштовних у платні, 70-75% валова маржа (витрати на AI-обробку), 4-6% місячний відтік, середній lifetime клієнта 18 місяців. Цільові ринки: маркетингові агенції (30%), МСП (40%), e-commerce (20%), інфлюенсери (10%). Дорожня карта: Q4 2025 завершення MVP, Середина 2026 публічний запуск, 2027 розширена аналітика + API-доступ, 2028+ глобальний масштаб (мобільні застосунки, white-label рішення).',
+        en: 'Project currently in Pre-Seed phase (concept/planning). First large-scale project for 3-person founding team. Vision: all-in-one marketing automation platform eliminating routine content tasks for marketers. MVP development timeline: Q4 2025 (AI content generation, 3-account management, TikTok/Instagram focus). Public launch: Mid 2026. Year 1 (2H 2026) projections: 100-175 paying customers (50 Starter @ $49/mo, 15 Business @ $149/mo, 1-2 Enterprise @ $499/mo), $32-47K revenue. Year 2 (2027): 330 paying customers (250 Starter, 75 Business, 5 Enterprise), $311K revenue. Year 3 (2028): 812 paying (600 Starter, 200 Business, 12 Enterprise), $785K revenue. Conservative projections based on: $40-60 CAC via content marketing + paid ads, 12-15% free-to-paid conversion, 70-75% gross margin (AI processing costs), 4-6% monthly churn, avg 18-month customer lifetime. Target markets: marketing agencies (30%), SMBs (40%), e-commerce (20%), influencers (10%). Roadmap: Q4 2025 MVP completion, Mid 2026 public launch, 2027 advanced analytics + API access, 2028+ global scale (mobile apps, white-label solutions).',
+        ru: 'Проект в настоящее время на стадии Pre-Seed (концепция/планирование). Первый крупномасштабный проект команды из 3 основателей. Видение: универсальная платформа автоматизации маркетинга, устраняющая рутинные задачи по контенту для маркетологов. Сроки разработки MVP: Q4 2025 (AI-генерация контента, управление 3 аккаунтами, фокус на TikTok/Instagram). Публичный запуск: Середина 2026. Прогнозы Год 1 (2H 2026): 100-175 платящих клиентов (50 Starter @ $49/мес, 15 Business @ $149/мес, 1-2 Enterprise @ $499/мес), $32-47K выручки. Год 2 (2027): 330 платящих клиентов (250 Starter, 75 Business, 5 Enterprise), $311K выручки. Год 3 (2028): 812 платящих (600 Starter, 200 Business, 12 Enterprise), $785K выручки. Консервативные прогнозы основаны на: $40-60 CAC через контент-маркетинг + платную рекламу, 12-15% конверсия бесплатных в платных, 70-75% валовая маржа (затраты на AI-обработку), 4-6% месячный отток, средний lifetime клиента 18 месяцев. Целевые рынки: маркетинговые агенства (30%), МСБ (40%), e-commerce (20%), инфлюенсеры (10%). Дорожная карта: Q4 2025 завершение MVP, Середина 2026 публичный запуск, 2027 расширенная аналитика + API-доступ, 2028+ глобальный масштаб (мобильные приложения, white-label решения).',
+        be: 'Праект у цяперашні час на стадыі Pre-Seed (канцэпцыя/планаванне). Першы маштабны праект каманды з 3 заснавальнікаў. Бачанне: універсальная платформа аўтаматызацыі маркетынгу, якая ліквідуе рутынныя задачы па кантэнту для маркетолагаў. Тэрміны распрацоўкі MVP: Q4 2025 (AI-генерацыя кантэнту, кіраванне 3 акаўнтамі, фокус на TikTok/Instagram). Публічны запуск: Сярэдзіна 2026. Прагнозы Год 1 (2H 2026): 100-175 плацяжных кліентаў (50 Starter @ $49/мес, 15 Business @ $149/мес, 1-2 Enterprise @ $499/мес), $32-47K выручкі. Год 2 (2027): 330 плацяжных кліентаў (250 Starter, 75 Business, 5 Enterprise), $311K выручкі. Год 3 (2028): 812 плацяжных (600 Starter, 200 Business, 12 Enterprise), $785K выручкі. Кансерватыўныя прагнозы заснаваны на: $40-60 CAC праз кантэнт-маркетынг + платную рэкламу, 12-15% канверсія бясплатных у платных, 70-75% валавая маржа (выдаткі на AI-апрацоўку), 4-6% месячны адток, сярэдні lifetime кліента 18 месяцаў. Мэтавыя рынкі: маркетынгавыя агенцтвы (30%), МСБ (40%), e-commerce (20%), інфлюенсеры (10%). Дарожная карта: Q4 2025 завяршэнне MVP, Сярэдзіна 2026 публічны запуск, 2027 пашыраная аналітыка + API-доступ, 2028+ глабальны маштаб (мабільныя прыкладанні, white-label рашэнні).',
+        pl: 'Projekt obecnie w fazie Pre-Seed (koncepcja/planowanie). Pierwszy projekt na dużą skalę dla 3-osobowego zespołu założycielskiego. Wizja: kompleksowa platforma automatyzacji marketingu eliminująca rutynowe zadania związane z treścią dla marketerów. Harmonogram rozwoju MVP: Q4 2025 (generowanie treści AI, zarządzanie 3 kontami, fokus na TikTok/Instagram). Publiczne uruchomienie: Połowa 2026. Prognozy Rok 1 (2H 2026): 100-175 płacących klientów (50 Starter @ 49 USD/mies, 15 Business @ 149 USD/mies, 1-2 Enterprise @ 499 USD/mies), 32-47 tys. USD przychodów. Rok 2 (2027): 330 płacących klientów (250 Starter, 75 Business, 5 Enterprise), 311 tys. USD przychodów. Rok 3 (2028): 812 płacących (600 Starter, 200 Business, 12 Enterprise), 785 tys. USD przychodów. Konserwatywne prognozy oparte na: 40-60 USD CAC przez content marketing + płatne reklamy, 12-15% konwersja bezpłatnych na płatne, 70-75% marża brutto (koszty przetwarzania AI), 4-6% miesięczny churn, średni lifetime klienta 18 miesięcy. Rynki docelowe: agencje marketingowe (30%), MŚP (40%), e-commerce (20%), influencerzy (10%). Plan działania: Q4 2025 ukończenie MVP, Połowa 2026 publiczne uruchomienie, 2027 zaawansowana analityka + dostęp API, 2028+ globalny zasięg (aplikacje mobilne, rozwiązania white-label).',
+        uk: 'Проєкт наразі на стадії Pre-Seed (концепція/планування). Перший великомасштабний проект команди з 3 засновників. Бачення: універсальна платформа автоматизації маркетингу, яка усуває рутинні завдання з контенту для маркетологів. Терміни розробки MVP: Q4 2025 (AI-генерація контенту, управління 3 акаунтами, фокус на TikTok/Instagram). Публічний запуск: Середина 2026. Прогнози Рік 1 (2H 2026): 100-175 платних клієнтів (50 Starter @ $49/міс, 15 Business @ $149/міс, 1-2 Enterprise @ $499/міс), $32-47K виручки. Рік 2 (2027): 330 платних клієнтів (250 Starter, 75 Business, 5 Enterprise), $311K виручки. Рік 3 (2028): 812 платних (600 Starter, 200 Business, 12 Enterprise), $785K виручки. Консервативні прогнози засновані на: $40-60 CAC через контент-маркетинг + платну рекламу, 12-15% конверсія безкоштовних у платні, 70-75% валова маржа (витрати на AI-обробку), 4-6% місячний відтік, середній lifetime клієнта 18 місяців. Цільові ринки: маркетингові агенції (30%), МСП (40%), e-commerce (20%), інфлюенсери (10%). Дорожня карта: Q4 2025 завершення MVP, Середина 2026 публічний запуск, 2027 розширена аналітика + API-доступ, 2028+ глобальний масштаб (мобільні застосунки, white-label рішення).',
       },
       request: {
         round: {
-          en: 'Seed',
-          ru: 'Seed',
-          be: 'Seed',
-          pl: 'Seed',
-          uk: 'Seed',
+          en: 'Pre-Seed',
+          ru: 'Pre-Seed',
+          be: 'Pre-Seed',
+          pl: 'Pre-Seed',
+          uk: 'Pre-Seed',
         },
         amount: {
           en: '$200K - $300K',
